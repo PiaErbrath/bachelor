@@ -1,0 +1,33 @@
+\section{Criteria \& Weights} \label{sec:criteria}
+Inside this section the different criteria are explained and divided in their weighted categories. The criteria are the following:
+\begin{itemize}
+	\item Verifiability: \newline
+	Importance: 3 \newline
+	The signed documents must be legally valid as evidence. In the best case they should have the same legal rights as a document signed with a handwritten signature.
+	\item Usability: \newline
+	Importance: 2 \newline
+	The signing of the documents should be as easy and fast as possible. That means that it should be allowed for cloud services or applications accessible from all possible electronic devices. 
+	\item Extra hardware required: \newline
+	Importance: 1 \newline
+	For some technologies extra hardware is required like a card reader or a component to sign with a pen. That leads to a lot of costs during the fact unknown how many employees need to have such hardware.
+\end{itemize} 
+
+The table \ref{Tab:criteria} displays the different categories for each criterion and shows their weighting. The best weighting is (+ +) and the worst is (- -). 
+
+\begin{table}[h]
+	\begin{tabular}{|c|c|c|} \hline
+		Criterion  & Category & Wight \\ \hline
+		\multirow{4}{*}{Verifiability} & No & - - \\ \cline{2-3}
+									   & Yes & o \\ \cline{2-3}
+									   & With tracking of documents changes & + \\ \cline{2-3}
+									   & Equal to handwritten signature & + + \\ \cline{1-3}
+		\multirow{3}{*}{Usability} & Only PC & - - \\ \cline{2-3}
+		                           & Only devices with touch recognition & - \\ \cline{2-3}
+								   & All devices & + + \\ \cline{1-3}
+		\multirow{3}{*}{Extra hardware required} & Yes & - -\\ \cline{2-3}
+												& Possible & o \\ \cline{2-3}
+												& No & + +  \\ \cline{1-3}
+	\end{tabular}
+	\caption{Categories and their weighting}
+	\label{Tab:criteria}
+\end{table}

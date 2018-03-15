@@ -1,0 +1,48 @@
+\section{Comparison} \label{sec:comp}
+This section will compare the the result of the research. Therefore a summary is done and afterwards the comparison.
+Based on the criteria defined in section \ref{sec:criteria} the different types of \gls{es} are summarized with the regarding weight. That is done in Table \ref{Tab:summary}.
+
+\begin{table}[h]
+	\begin{tabular}{|c|c|c|c|c|} \hline
+		\multirow{2}{*}{Criterion} & \multicolumn{4}{|c|}{Signature Type} \\
+								   & \gls{ses} & \gls{aes} & \gls{qes} & \gls{bs} \\ \cline{1-5}
+		Verifiability & o & + & + + & o \\ \hline
+		Usability & ++ & ++ & + + & - \\ \hline
+		Extra hardware required & + + & + + & o & o \\ \hline
+	\end{tabular}
+	\centering
+	\caption{Summary of electronic signature types based on criteria}
+	\label{Tab:summary}
+\end{table}
+
+To make a better comparison of the different \gls{es} types, a translation from weighting to points is done in table \ref{Tab:Translation} which is used in a later calculation.
+
+\begin{table}[h]
+	\begin{tabular}{|c|c|c|c|c|c|} \hline
+		Weight & - - & - & o & + & + + \\ \hline
+		Points & -2 & -1 & 0 & 1 & 2 \\ \hline
+	\end{tabular}
+	\centering
+	\caption{Translation of weights in points}
+	\label{Tab:Translation}
+\end{table}
+
+To get a complete image of the result the translated weights are multiplied with the importance of the criterion. To make it visible:
+\begin{center}
+	\textit{Sum = Importance Criterion * Points of Weight}
+\end{center}
+The result of that calculation is presented in table \ref{Tab:comp}.
+
+\begin{table}[H]
+	\begin{tabular}{|c|c|c|c|c|} \hline
+		\multirow{2}{*}{Criterion} & \multicolumn{4}{|c|}{Signature Type}\\
+									& \gls{ses} & \gls{aes} & \gls{qes} & \gls{bs} \\ \cline{1-5}
+		Verifiability 			& 0 & 3 & 6 & 0 \\ \hline
+		Usability 				& 4 & 4 & 4 & -2 \\ \hline
+		Extra hardware required & 2 & 0 & 0 & 0 \\ \hline \hline
+		Total sum				& 6 & 7 & 10 & -2 \\ \hline
+	\end{tabular}
+	\centering
+	\caption{Comparison of electronic signature types}
+	\label{Tab:comp}
+\end{table}

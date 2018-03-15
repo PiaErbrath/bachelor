@@ -1,0 +1,148 @@
+\documentclass[a4paper,twosided,11pt]{report}
+\usepackage[ngerman,english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[pdftex,scale={.8,.8}]{geometry}
+\usepackage{layout}
+\usepackage{fancybox}
+\usepackage[pdftex]{graphicx}
+\usepackage{fancyhdr}
+\usepackage{%
+  array,
+  booktabs,
+  dcolumn,
+  rotating,
+  shortvrb,
+  units,
+  url,
+  lastpage,
+  longtable,
+  lscape,
+  multirow,
+  amssymb,
+  amsmath,
+  float,
+  chngpage,
+  colortbl,times,
+}
+\usepackage{hyperref}
+\usepackage[toc, nonumberlist, acronym]{glossaries}
+%\usepackage{sebicrccards}
+%\usepackage{sebirequirements}
+\usepackage[left,pagewise,modulo]{lineno}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{.5\baselineskip}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{pdfpages}
+%\usepackage[style=authoryear-ibid,backend=biber]{biblatex}
+
+\fancypagestyle{plain}{%
+	\fancyhf{}%
+	\fancyhead[R]{\thepage}%
+	\renewcommand{\headrulewidth}{0.4pt}% Line at the header invisible
+}
+\pagestyle{fancy}
+\fancyhf{}%
+\fancyhead[R]{\thepage}%
+
+\fancypagestyle{ownstyle}{
+	\fancyhf{}%
+	\fancyhead[R]{\thepage}%
+	\fancyhead[L]{\nouppercase{\leftmark}}
+	\renewcommand{\headrulewidth}{0.4pt}% Line at the header invisible
+}
+
+
+%% ensure toc etc use roman numbers
+
+\providecommand\Application{Provide an application name}
+\providecommand\Customer{Provide a customer name}
+
+\usepackage{metainfo}
+\providecommand{\MineOnlyStart}{}
+\providecommand{\MineOnlyEnd}{}
+
+% environment for a two column table with proper alignment
+% usage
+% \begin{infoblock}
+% Property: & Info
+% \end{infoblock}
+\newenvironment{infoblock}{
+	\begin{table}[h!]
+		\begin{tabular}{@{}p{0.25\textwidth}l}
+		}{
+	\end{tabular}
+\end{table}
+}
+
+% Simple command for a fancy that attracts attention.
+% usage:
+% \LongQuote{the text you are quoting}{the name of the author}
+% Any name can be passed (e.g. \citet{author2000text})
+\newcommand{\LongQuote}[2]{
+	\begin{flushright}
+		\begin{minipage}{.9\linewidth}
+			\textit{#1}
+		\end{minipage}
+		
+		\textit{#2}
+	\end{flushright}
+}
+
+\usepackage[
+backend=biber,
+style=authoryear,
+natbib=true,
+urldate=long,
+dashed=false,
+maxcitenames=3,
+maxbibnames=10,
+giveninits=true,
+]{biblatex}
+
+\DefineBibliographyStrings{english}{%
+	bibliography = {References},
+	urlseen = {Accessed},
+	urlfrom = {Available at:}
+}
+\DeclareFieldFormat{urldate}{\mkbibbrackets{\bibstring{urlseen}\space#1}}
+\DeclareFieldFormat{url}{\mkbibbrackets{online}\space\bibstring{urlfrom}\space\url{#1}}
+
+% suppress qoutation marks from title
+\DeclareFieldFormat[article,inproceedings]{citetitle}{#1}
+\DeclareFieldFormat[article,inproceedings]{title}{#1}
+\DeclareFieldFormat[article]{number}{\mkbibparens{#1}}
+
+%% show name of second authors in references in form of lastname, initials
+\DeclareNameAlias{sortname}{last-first}
+
+% change journal format to volume(number) e.g. 1(4).
+\renewbibmacro*{volume+number+eid}{%
+	\printfield{volume}%
+	\printfield{number}%
+	\setunit{\addcomma\space}%
+	\printfield{eid}}
+
+% add comma after journaltitle
+\renewbibmacro*{journal+issuetitle}{%
+	\usebibmacro{journal}%
+	\setunit*{\addcomma\space}%
+	\iffieldundef{series}
+	{}
+	{\newunit
+		\printfield{series}%
+		\setunit{\addspace}}%
+	\usebibmacro{volume+number+eid}%
+	\setunit{\addspace}%
+	\usebibmacro{issue+date}%
+	\setunit{\addcolon\space}%
+	\usebibmacro{issue}%
+	\newunit}
+
+% suppress "In" before journal name
+\renewbibmacro{in:}{}
+
+% increase spacing between items in list of references
+\setlength\bibitemsep{1.5\itemsep}

@@ -1,0 +1,38 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{csquotes}% Recommended
+\usepackage[toc, nonumberlist, acronym]{glossaries}
+\usepackage{multirow}
+\usepackage{float}
+
+\usepackage[style=authoryear-ibid,backend=biber]{biblatex}
+
+\addbibresource{main.bib}
+
+\author{Pia Erbrath}
+\title{Electronic Signature - a Research}
+\makeglossaries
+
+\begin{document}
+	\maketitle
+	\pagenumbering{Roman}
+	\tableofcontents
+	\listoftables
+	\newpage
+	\input{./gls.tex}
+	\clearpage
+	\pagenumbering{arabic}
+	\input{./intro/intro}
+	\input{./scope/scope}
+	\input{./questions/questions}
+	\input{./criteria/criteria}
+	\input{./result/result}
+	\input{./comparison/comp}
+	\input{./advice/advice}
+	\newpage
+	\printbibliography
+\end{document}

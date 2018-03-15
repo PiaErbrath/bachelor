@@ -1,0 +1,27 @@
+COUPA CONTRACT	
+- Vertragsüberprüfung: HInweis, wenn Vertrag ausläuft; Warnungen & HInweise bei Veränderungen
+- Zentrale Bestandsverwaltung: 
+- Berücksichtigung Kontext: Verträge eng in Unernehmensabläufe installiert & stehen bei Bedarf zur Verfügung
+- gesichetren Zugriff
+- ....
+
+CALMS
+- KOntenprüfung & Anfragenbearbeitung
+- Verragsänderungen
+-Fakturierung & Buchhaltung
+- Fälligkeit & Beendigung (vorzeitige Ablöse, unfreiwillige Beendigung,...)
+- Inkasso- & Forderungsmangment
+- ....
+
+OTRIS Contract
+- Strukturierungs- , SUch- & Sortierfunktion (Schlagwortsuche, Kombi)
+- Reporting (gruppiert Daten, filtert nach Kriterien, erstellt Statistiken mit Visualisierung)
+- Browserbasiert auf firmemserver / cloud
+- Berechtigungskonzept (Usergruppen)
+- Vertragsakte (Vertrag, zugehörige Dokumente, Versionierung, Korrespondenz)
+- Automatisierungsmodul (lesen von Fristen & alarmerirung wenn Vertrag endet)
+- Archivierung & Versionierungen
+- flexible KOnfiguration zur Prozessoptimierung
+- integration 3 systeme (Schnittstellen)
+- Übersicht über Zahlungen und Einnahmen
+

@@ -1,0 +1,93 @@
+\input{./include/include}
+\usepackage{sebithesistitle}
+\usepackage{rotate}
+\usepackage[toc,page]{appendix}
+\usepackage{eurosym}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{0.9}
+
+\title{Introduction of a Contract Management System \newline at codecentric AG}
+\subtitle{Bachelor Thesis}
+\author{Pia Erbrath}
+\def\place{Solingen}
+\date{\place, \today}
+
+% provide data for information page
+\def\documentname{Interim Report for Bachelor Thesis}
+\def\studentname{Pia Erbrath}
+\def\snumber{2300869}
+\def\course{Informatics - Software Engineering}
+\def\period{February 2018 - July 2018}
+\def\companyname{codecentric AG}
+\def\companyaddress{Hochstr. 11}
+\def\companypostcodecity{42697, Solingen}
+\def\companycountry{Germany}
+\def\companycoach{Niko Bl\"attermann}
+\def\companycoachmail{niko.blaettermann@codecentric.de}
+\def\universitytutor{Ferd van Odenhoven}
+\def\universitytutormail{f.vanodenhoven@fontys.nl}
+\def\examinator{Marco Langenhuizen}
+\def\externalexpert{Professional B}
+\def\hasnda{no}
+
+\addbibresource{./include/references.bib}
+
+\makeglossaries
+
+\begin{document}
+	\maketitle
+	\pagenumbering{roman}
+	\pagestyle{plain}
+	\input{./include/informationpage}
+	\newpage
+	\input{./abstract/abstract}
+	\addcontentsline{toc}{chapter}{Abstract} 
+	\newpage
+	\input{./include/statementofauthenticity}
+	\newpage
+	
+	\tableofcontents
+	\addcontentsline{toc}{chapter}{\listtablename}
+	\listoftables
+	\addcontentsline{toc}{chapter}{\listfigurename}
+	\listoffigures
+	\newpage
+	\input{./glossary}
+	\newpage
+	\pagenumbering{arabic}
+	\pagestyle{ownstyle}
+	\chapter{Introduction}
+	\input{./intro/introduction}
+	
+	\chapter{Assignment}
+	\input{./assignment/assignment}
+	
+	\chapter{Project Management}
+	\input{./mgnt/management}
+	
+	\chapter{Analysis Current State}
+	\input{./analysis/currentState}
+	
+	\chapter{Requirements for New Process}
+	\input{./requirements/requirementsNew}
+	
+	\chapter{Conclusion}
+	\input{./conclusion/conclusion}
+	
+	\printbibliography
+	
+	\clearpage
+	\appendix
+	\chapter{Business Process Models of the Old Process}
+	\label{bpmnOld}
+	\input{./appendix/pbmnOld/bpmnCurrent}
+	
+	\chapter{Research about electronic Signature}
+	\input{./electronicSignatureResearch/electronicSignatureResearch}
+	
+	\chapter{Risk Register}
+	\input{./appendix/riskRegister/risks}
+	
+	
+	
+\end{document}

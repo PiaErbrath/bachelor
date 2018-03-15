@@ -1,0 +1,49 @@
+\documentclass[a4paper,twoside,11pt]{report}
+\usepackage[english]{babel}  
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc} 
+\usepackage[pdftex,scale={.8,.8}]{geometry}
+\usepackage{layout}
+\usepackage{fancybox}
+\usepackage[pdftex]{graphicx}
+\usepackage{fancyhdr}
+\usepackage[parfill]{parskip}
+\usepackage{%
+  array,
+  booktabs,
+  dcolumn,
+  rotating,
+  shortvrb,
+  units,
+  url,
+  lastpage,
+  longtable,
+  lscape,
+  multirow,
+  amssymb,
+  amsmath,
+  float,
+  chngpage,
+  colortbl,times,
+}
+\usepackage{hyperref}
+\usepackage[toc, nonumberlist, acronym]{glossaries}
+\usepackage{multirow}
+\usepackage{fancyhdr}
+\makeglossaries
+
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyhead[R]{\thepage}%
+  \renewcommand{\headrulewidth}{0.4pt}% Line at the header invisible
+}
+\pagestyle{fancy}
+\fancyhf{}%
+\fancyhead[R]{\thepage}%
+  
+\fancypagestyle{ownstyle}{
+  \fancyhf{}%
+  \fancyhead[R]{\thepage}%
+  \fancyhead[L]{\nouppercase{\leftmark}}
+  \renewcommand{\headrulewidth}{0.4pt}% Line at the header invisible
+}

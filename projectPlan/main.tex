@@ -1,0 +1,35 @@
+
+\documentclass[10pt,a4paper]{report}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[autostyle]{csquotes}
+\usepackage[acronym,nomain,nonumberlist]{glossaries}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{pdfpages}
+
+\author{Pia Erbrath(2300869) \\ \\ \\ Fontys Hogeschool Techniek en Logistiek \\ Software Engineering \\ Stage 2}
+\title{Contract Management Application \\ \textit{Project Plan}}
+\date{Solingen, \today}
+
+\makeglossaries
+
+\begin{document}
+	\maketitle
+	\pagenumbering{roman}
+	\tableofcontents
+	
+	\include{./glossary}
+	\pagenumbering{arabic}
+	\include{./introduction/intro}
+	
+	\include{./description/description}
+	
+	\include{./activities/activities}
+	
+	\include{./planning/planning}
+	
+\end{document}

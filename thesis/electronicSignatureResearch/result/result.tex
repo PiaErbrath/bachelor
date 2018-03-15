@@ -1,0 +1,80 @@
+\section{Result}
+
+In some used sources there is no difference between the term "\gls{ds}" and "\gls{es}". In this document there will be a difference. The "\gls{ds}" is the signature of a digital document and the "\gls{es}" is the signing of a document through a human or a machine to verify. This definition is also in the glossary.
+
+An important aspect of \gls{es} is, that by default a document is never encrypted. This needs to be done separately. It is mentioned at this point, because it is fact for every implementation, regulation and law. 
+
+Since 2014 a regulation \gls{eidas} for all \gls{eu} member states and stats in the \gls{eea} \parencite{BundesministeriumInneren2018} exists, which is since the 1st July 2016 standard for all participants \parencite{Steffens2018eIDAS}. A detailed overview what is inside this regulation and the realization of Germany will be explained in the following sections. 
+
+\subsection{Legal Aspects}
+Currently exist several laws and regulations. Below the most important for Germany and the \gls{eu} will be explained, because in these countries are most clients from codecentric AG placed.
+
+\subsubsection{eIDAS}
+As mentioned above is the \gls{eidas} legal for all \gls{eu} members and states in the \gls{eea}. That leads to the fact that all previous existing regulations from each individual country are superseded if they regulate aspects or topics of so called eIDs (electronic identification with various methods like electronic signatures or passports) and digital transactions \parencite{Steffens2018eIDAS,SignEasy2018}. One of the aims is "... to  enhance  trust  in  electronic  transactions  in  the  internal  market  by  providing  a  common foundation  for  secure  electronic  interaction  between  citizens,  businesses  and  public  authorities,  thereby  increasing the  effectiveness  of  public  and  private  online  services,  electronic  business  and  electronic  commerce  in  the  Union"\parencite[p. 73 §2]{eIDAS2014}.
+
+Inside these regulations the three different types of electronic signature are described: 
+\begin{enumerate}
+	\item \Gls{ses}, also just called \gls{es}
+	\item \Gls{aes}
+	\item \Gls{qes}
+\end{enumerate}
+Additional the \gls{eu} states three legal facts: 
+\begin{enumerate}
+	\item An \gls{es} is allowed as proof and should not be rejected only by the fact "that it is an electronic form or that it does not meet the requirements for qualified electronic signatures" \parencite[Article 25 § 1]{eIDAS2014}.
+	\item The \gls{qes} is equivalent to the handwritten signature \parencite[Article 25 § 2]{eIDAS2014}.
+	\item The \gls{qes} with a qualified certificate, certified by an \gls{eu} member state, is also in the other \gls{eu} states to be accepted as a \gls{qes} \parencite[Article 25 § 3]{eIDAS2014}.
+\end{enumerate}
+Furthermore, other regulation are defined like standards for certificates and the creation of the devices that generates \gls{qes}.
+
+\subsubsection{Germany}
+Since the 28th June 2017 are the previous regulations for \glspl{es} (Signaturgesetz und Verordnung zum Signaturgesetz) are invalid. Instead the regulation "Gesetz zur Durchführung der Verordnung (EU) Nr. 910/2014 des Europäischen Parlaments und des Rates vom 23. Juli 2014 über elektronische Identifizierung und Vertrauensdienste für elektronische Transaktionen im Binnenmarkt und zur Aufhebung der Richtlinie 1999/93/EG (eIDAS-Durchführungsgesetz)" \parencite{Bundestag2017} is the new law. This regulation fulfills all the requirements needed that the \gls{eidas} could be executed without problems and defines aspects in more detail \parencite{Bundesanzeiger2017}.
+Additional changes were made in the \gls{bgb}. Important for \glspl{es} are \gls{bgb} §125 et sequentes. Also, regulations for specific exceptions to the usage of \glspl{es} are defined in several other laws.  
+
+To use the \gls{es} to sign contracts all participated parties of that process need to agree on the usage. Therefore, a provision needs to be added informing the persons that if they continue the signing process they agree to the usage of \gls{es}. The complete process should be documented to show that everything was correct \parencite{Herfrid2017}.
+
+
+\subsection{Types of Electronic Signature}\label{subsec:typesES}
+Inside the \gls{eidas} three types of \glspl{es} are defined, as explained before. Inside the following they will be described with more details and how they are working. Additional biometric data will be introduced as a topic.
+
+\subsubsection{Simple Electronic Signature}
+This type of signature is the one with the lowest provability, but since \gls{eidas} it is allowed to be used within the court. The definition of an \gls{ses} is to add electronic data to existing electronic data \parencite[Article 3]{eIDAS2014}. This leads to the fact that just adding a photo to a document with a handwritten signature satisfies the definition of the typed name below a document or mail \parencite{CEFd2018}.
+
+But that could be easily manipulated or copied. Therefore, this type should not be used within documents that needs the identification of the signer.
+
+\subsubsection{Advanced Electronic Signature}
+The \gls{aes} has a different requirement than the \gls{ses}. It needs to be unique per signer in the sense that the person could be identified with the signature. Additional the \gls{aes} is generated by a unique algorithm or out of data  and the creator has this in his exclusive control. Furthermore, it needs the signature connected to the signed document in a way that changes of the signed document could be detected afterwards. \parencite[Article 26]{eIDAS2014}
+
+The most used technology for that is the \gls{pki} \parencite{CEFd2018}. This technology exist out of two keys that are connected with each other, so called public and private key. The private key needs to be always by the owner and should not get public, because then it is interrupted and the owner is not stable identifiable anymore. The public key is known by all parties documents and needs to be exchanged. Also, the algorithm used for an encryption must be published to all persons requiring it. The process is then the following:
+\begin{enumerate}
+	\item The signer calculates the \gls{ds} of the document to be signed.
+	\item The \gls{ds} is encrypted through the private key of the signer.
+	\item The signer sends the document and the encrypted \gls{ds} to the contract partner.
+	\item The contract partner receives data.
+	\item The contract partner decrypts the encrypted \gls{ds}.
+	\item The contract partner calculates on its own the \gls{ds} of the signed document.
+	\item The contract partner compares the calculated \gls{ds} with the decrypted \gls{ds}. Depending on the results two situations could occur: 
+	\begin{enumerate}
+		\item Both \glspl{ds} are equal: \newline The signer is verified, because the decryption was correctly and the content of the document is not changed, cause the value is equal.
+		\item The \glspl{ds} are unequal: \newline With this document is something wrong. Either the wrong signer signed the document, the content was changed or both previous cases together.
+	\end{enumerate}
+\end{enumerate}
+The used public key and the encryption/decryption algorithm could be documented in a certificate that identifies the signer and is sent once or every time with a document.
+
+\subsubsection{Qualified Electronic Signature}
+A \gls{qes} is a \gls{aes} with more restrictions. The first restriction is that the signature needs to be " created   by   a   qualified   electronic   
+signature  creation  device" \parencite[Article 3]{eIDAS2014}. This device could be physical like a \gls{sc} or USB stick or remote in a cloud application \parencite{CEFd2018}. The second restriction is that a qualified  certificate  for an \gls{es} is required. This is a certificate that is allocated by a so called Trust Center, an institution that is regular controlled by a governance instance if they satisfy all the requirements defined in the \gls{eidas} \parencite{CEFd2018}. With the certificate a validation should be given if a person exist similar to the passport in the non-digital world.
+
+As mentioned as before the \gls{qes} has equal rights than a handwritten signature. The problem is that the certificates and algorithms used for encrypting/decrypting the \gls{ds} have a certain validity. After a settled time point, they are not trusted anymore. For algorithms that is five years and for certificates depending on the Trust Center mostly between two and three years, sometimes ten years. To keep the documents secure signed for a proof they need to be resigned after one of the signer gets a new algorithm or certificate \parencite{Steffens2018Gueltigkeit}.
+
+\subsubsection{Biometric Signature}
+There are different types of biometric data individual for each person, e.g. iris, fingerprint or the face. But also the signature is individual per person. And this type is already divided in subtypes. They are explained below:
+\begin{itemize}
+	\item Static: the correlation between two images of a signature.
+	\item Dynamic: the correlation of two signature data with X and Y position of the movements, the writing rhythm, pressure and acceleration.
+\end{itemize}
+\parencite{biometric2017types,bayometric2018}
+
+To get a good verification base the signer had to give the software multiple examples of his \gls{bs} by the registration. In the later usage the tool can decide based on the data received from the beginning if the signature is correct \parencite{bayometric2018}. Another methodology is to combine the previous method with the of the \gls{aes}. Therefore, the signature will be encrypted and added to the file, a \gls{ds} is calculated and also added to the file. At the end the receiver of the document can calculate if the signer signed the document and that the content did not changed. 
+
+The advantage of a \gls{bs} is that the copying is not possible, because every person writes in his own style (all the details belonging to the dynamic subtype) and this style could not be copied even from specialist \parencite{Schmitz2004}. But at the moment this signature is not equated with the handwritten signature as the \gls{qes} and hardware is required that can recognize the signature such as tablets.
+
