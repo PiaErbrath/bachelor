@@ -24,7 +24,7 @@ The guideline defines strict regulations. Important is that there are some condi
 \section{Business Process} \label{sec:bp}
 First of all the involved user groups of the business process are explained, next the general process is briefly described followed by the concerning subprocesses.
 
-\subsection{Involved User Groups}
+\subsection*{Involved User Groups}
 Currently the following parties are involved in the business process: 
 \begin{table}[h]
 	\begin{tabular}{|p{0.25cm}|p{2cm}|p{14cm}|} \hline
@@ -38,14 +38,14 @@ Currently the following parties are involved in the business process:
 	\label{tab:bpRoles}
 \end{table}
 
-\subsection{Terminologies}
+\subsection*{Terminologies}
 At \gls{cc} different terminologies are used, which are also used to explain the business process. To get an understanding of them they are listed here:
 \begin{itemize}
 	\item Quote: \newline
 	Is a document in which \gls{cc} gives the customer an overview about the approximated work, needed software and hardware and costs to their requested project. This document type is divided in two subcategories. This is important to distinguish between them, because the creation of them is different. In the following they will be explained:
 	\begin{enumerate}
 		\item Simple Quote: \newline
-		An uncomplicated quote, which has only a few listings of needed Software and Hardware and estimated working and their prices. It is always based on the general terms and conditions of business.
+		An uncomplicated quote, which has only a few listings of needed Software and Hardware and estimated working and their prices. It is always based on the \gls{gtct}.
 		\item Complex Quote: \newline
 		A quote for a bigger project or company. Inside this document a lot of explanations about tasks and topics are placed. Also, the sum is mostly higher than 50.000 \euro and can have regulations regarding the paying of the sum. Furthermore, this type may be have different legal foundation than a simple quote. Moreover, could it be that inside this project extern employees are involved and the quote explains the conditions of this situation. In general with this quote type more interactions with the customer is required. 
 	\end{enumerate}
@@ -57,12 +57,12 @@ At \gls{cc} different terminologies are used, which are also used to explain the
 %	ToDo
 \end{itemize}
 
-\subsection{General Process}
+\subsection*{General Process}
 The general process is visualized in figure \ref{fig:0_main}. Mainly involved are the sales and the backoffice department. The only interaction with the customer is to exchange documents and information, which are needed to create the documents for the possible projects. There is also a clear division of tasks. The Sales is responsible for the quotes and the backoffices for coordinating and set up the requirements to start the working on the orders coming in based on the quotes.
 
 The used technologies and tools in this process are mainly the current \gls{erp} Scopevisio, Microsoft Word and Google Docs, sometimes DocuSign is also used. With the first one the basic information of the document is created and maintained, the simple quotes are generated out of it and all documents are stored inside based on a defined structure. With Microsoft Word and Google Docs mostly the more complex quotes and the contracts are created. The employees can choose which one of the two tools they will use. DocuSign is an online tool that provides functionality to sign documents electronically.
 
-\subsection{Subprocesses}
+\subsection*{Subprocesses}
 In the general process several subprocesses are mentioned. Each of them will be described.
 
 The first subprocess is the creation of the quote visualized in figure \ref{fig:0-1_sub}. This process is placed in the sales department. They use the \gls{erp} tool Scopevisio to generate the metadata of the quote and depending on the category of the possible project either a simple quote is genera
@@ -74,8 +74,8 @@ The next subprocess the approving of the order from the customer, presented in f
 The last subprocess is the setup of the order processing. This process is presented through the figure \ref{fig:0-4_sub}. First the backoffice informs the project manager that they successfully agreed with the customer. At this point starts a next subprocess. This is shown in figure \ref{fig:0-4-1_subsub}. In the cases that additional licenses or hardware is required, that will be ordered and the invoices and delivery tickets added to Scopevisio. Then it goes back to the previous process. \newline
 The backoffice identifies the person(s) which should process the order and creates for it/them a task ticket on the Jira, a tool for tracking projects and their progress. In the case that the employees are unknown, the project manager is requested to determinate them. Next all involved employees get the information about the ticket and the processing of the order can be started.
 
-\section{Issues \& Problems}
-At the moment there are several issues and problems with the process. The major one is that the most documents will be signed manually. This leads to several others facts:
+\section{Issues \& Problems} \label{sec:issues}
+At the moment there are several issues and problems with the process. The major problem is that the most documents will be signed manually. This leads to several others facts:
 \begin{itemize}
 	\item The signing process can take a lot of time: \newline
 	Due to the fact that some documents type need to be signed additionally from one of the governing board or a procurator and that there are fourteen sites without a person having this status, the document need to be sent to the headquarter of \gls{cc} in Solingen. Therefore, three options exist:
@@ -92,3 +92,9 @@ At the moment there are several issues and problems with the process. The major 
 	In many cases happens that documents were not signed because of the too much effort it needs or the employees do not know that they need to sign the documents. 
 \end{itemize} 
 In some cases already the online tool DocuSign is used to sign documents electronically. But at the moment only a few people can upload the to be signed documents. This leads to the situation that they need to coordinate the signing process in the case it should happen electronically. Furthermore, there is the issue of the manual placement of placeholders for elements the signer need to fill in, like date, place, name and signature. Moreover, the persons need to sign the document need to be specified before sending it. In the case an additional person from \gls{cc} need to sign the document, based on the regulation from the signing guideline, also they need to be specified. If the selected person do not recognizes the request of signing, it also can take time to get the signature.
+
+Furthermore, a problem is the achieving of the documents. At the moment this is done for the most documents electronically. Therefore, the documents need to be scanned and placed in the electronic archive. In the case the document was signed electronically it need to be downloaded from the tool DocuSign and placed in the archive. These steps make a lot of effort and take time could be used for other tasks.
+
+Another problem is the creation of the documents. In the quote generation process often formal mistakes are inserted like an incorrect period of payment, especial if the customer have a different arrangement with \gls{cc} as the \gls{gtct}. Additional the documents have a different layout, that leads to the issue of an inconsistent corporate identity towards the customer and the outside world.
+
+Finally, there is the problem, that the signing guideline is outdated and not practicable anymore in some parts for \gls{cc}. At the moment the staff of \gls{cc} follows the practical way, which is official not allowed. 
