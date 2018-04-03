@@ -7,7 +7,7 @@ main:
 	pdflatex presentation.tex
 
 clean:
-	rm -f *.log *.lof *.lot *.toc *~ *.aux *.fls *.out *.bbl *.blg *.hst *.ver *.lol *.synctex.gz *.bcf *.run.xml *-blx.bib *.acn *.acr *.alg *.glg *.glo *.gls *.glsdef *.ist *.xdy *.glsdefs
+	rm -f *.log *.lof *.lot *.toc *~ *.aux *.fls *.out *.bbl *.blg *.hst *.ver *.lol *.synctex.gz *.bcf *.run.xml *-blx.bib *.acn *.acr *.alg *.glg *.glo *.gls *.glsdef *.ist *.xdy *.glsdefs *.snm *.nav
 
 cleanall: clean
 	rm -f presentation.pdf
