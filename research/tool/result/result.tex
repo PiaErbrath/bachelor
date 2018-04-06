@@ -20,18 +20,18 @@ This tool is provided by the company Wacom, which is the customer previously tho
 \end{table}
 
 \subsection{DocuSign}
-This tool is already in usage at \gls{cc}, but not always and with a lot of manual actions and missing things like the company stamp. During the testing a lot of functionalities were figured out.
+This tool is already in usage at \gls{cc}, but not always and with a lot of manual actions and missing things like the company stamp. During the testing a lot of functionalities were figured out. The test protocol is placed in the appendix \ref{sec:docusign}. The table \ref{tab:docusign} below will give a short summary about the test result and other aspects figured out during the research.
 
 \begin{table}[h]
 	\begin{tabular}{|p{4cm}|p{10cm}|} \hline
 		Criterion & Fulfillment \\ \hline
-		Usage without license & Yes, just need to add some information required from the person request the signing.\\ \hline
+		Usage without license & Yes, just need to add some information required from the person request the signing like name and mail address.\\ \hline
 		Devices independent & Online available, also a \gls{app} is accessible for all \gls{os} of smartphones \parencite{docusign2018mobile}. \\ \hline
-		Integration possible & A \gls{sdk} available within the \grqq Business Flex\grqq packet of the provider. Also an integration is possible with Google Drive \parencite{docusign2018integration}. \\ \hline
-		Certified & \\ \hline
+		Integration possible & A \gls{sdk} available within the \grqq Business Flex\grqq packet of the provider. Also an integration is possible with Google Drive, but therefore the Google Drive cloud need to be connected to DocuSign \parencite{docusign2018integration,docusign2018formats}. \\ \hline
+		Certified & DocuSign satisfies the standards of the \gls{eidas} and more security standards \parencite{docusign2018certificates,docusign2018legal}. \\ \hline
 		Easy usage & The fields need to be set manual, it need to be checked if it possible to customize it. Furthermore it is possible to track activities, assign signer, add the company stamp, transfer the signing responsibility, decline the signing and to sign the document manual and scan it then. \\ \hline
-		Costs & \\ \hline
-		Accepted documents & PDF \& Microsoft Word accepted, Open Office Writer is not accepted. \\ \hline
+		Costs & The provider of DocuSign offers different plans. \Gls{cc} needs at least the \textit{Business Pro} Plan for one user, which costs 480\$ per year, and the \textit{intermediate API} plan with 3420\$ per year. But due to the fact, that there will  e more than one user, the enterprise offerings should be requested. \parencite{docusign2018api,docusign2018user} \\ \hline
+		Accepted documents & PDF \& Microsoft Word accepted, Open Office Writer is not accepted. Moreover, the maximum accepted size of a document is 25 \gls{mb}. \parencite{docusign2018formats} \\ \hline
 		Amount of accounts & Depending on the license ordered.\\ \hline
 	\end{tabular}
 	\caption{Summary DocuSign}
