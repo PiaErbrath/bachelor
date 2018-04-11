@@ -25,7 +25,7 @@ This tool is already in usage at \gls{cc}, but not always and with a lot of manu
 \begin{table}[h]
 	\begin{tabular}{|p{4cm}|p{10cm}|} \hline
 		Criterion & Fulfillment \\ \hline
-		Usage without license & Yes, just need to add some information required from the person request the signing like name and mail address.\\ \hline
+		Usage without license & Yes, just need to add some information required from the person request the signing like name and mail address for signing. In the case of uploading and managing the documents an account is required.\\ \hline
 		Devices independent & Online available, also a \gls{app} is accessible for all \gls{os} of smartphones \parencite{docusign2018mobile}. \\ \hline
 		Integration possible & A \gls{sdk} available within the \grqq Business Flex\grqq packet of the provider. Also an integration is possible with Google Drive, but therefore the Google Drive cloud need to be connected to DocuSign \parencite{docusign2018integration,docusign2018formats}. \\ \hline
 		Certified & DocuSign satisfies the standards of the \gls{eidas} and more security standards \parencite{docusign2018certificates,docusign2018legal}. \\ \hline
@@ -39,26 +39,25 @@ This tool is already in usage at \gls{cc}, but not always and with a lot of manu
 \end{table}
 
 \subsection{HelloSign}
-
-
+The online tool HelloSign is used at the subsidiary company Istana of \gls{cc}. Therefore, it should also taken into account. Not all functionalities could be tested through the fact that for the business version data were requested, the tester was not allowed to give. The result of the test is documented in appendix \ref{sec:hellosign} and a summary of it together with additional information collected from an online research is given in table \ref{tab:hellosign}.
 \begin{table}[h]
 	\begin{tabular}{|p{4cm}|p{10cm}|} \hline
 		Criterion & Fulfillment \\ \hline
-		Usage without license & \\ \hline
-		Devices independent & \\ \hline
-		Integration possible & \\ \hline
-		Certified & \\ \hline
-		Easy usage & \\ \hline
-		Costs & \\ \hline
-		Accepted documents & \\ \hline
-		Amount of accounts & \\ \hline
+		Usage without license & Signing without account possible, but the signed documents could not be viewed online and uploaded if no account exists. It will be send within a mail. Moreover, there is the fact that the free version only allows to send three documents per month. This leads to the result, that a higher version is required \parencite{hellosign2018price}. \\ \hline
+		Devices independent & The tool is online available. Furthermore, exists an \gls{app} for Android and iOS, but it has not the same functionalities as the online platform.  \parencite{hellosign2018legal} \\ \hline
+		Integration possible & HelloSign has an \gls{api} with different version provided, included there are several functionalities. Moreover, integration exists for Google services like Google Suite and for several other business applications e.g. HubSpot CRM, which used at \gls{cc}. Additionally third party integrations are possible with Zapier, a tool for modeling business processes. \parencite{hellosign2018integration,hellosign2018api} \\ \hline
+		Certified & The tool fulfills the requirements of the \gls{eidas} regulations of the \gls{eu} and can be used in the \gls{usa} \parencite{hellosign2018legal} \\ \hline
+		Easy usage & It is simple to upload a document and sign it, due to the fact that there is intuitive handling. Not all functionalities like branding and company stamp could be tested, because of the non usable test version of higher plans. The fields required for signing need to be set manual and there is not that much choice of fields. In the case the \gls{app} is used, only the creation of a signing process could be done. \\ \hline
+		Costs & For the usage at \gls{cc} two different licenses are required. First the \gls{api} license where at least the version API Gold is need which costs 449\$ per month. The second license is the user license. Therefore the User Business version is required at least with five senders. It costs 40\$ per month. But due to the fact, that more senders are needed the Enterprise version is advisable. Yet the price is not given in the internet\parencite{hellosign2018price,hellosign2018api} .\\ \hline
+		Accepted documents & HelloSign accepts several documents format. In the test the formats \gls{pdf}, Microsoft Word and Open Office Writer was accepted. The maximal amount of a pages a document is 500 pages or a file size of 40th \gls{mb} \parencite{hellosign2018documents}. \\ \hline
+		Amount of accounts & Inside the business version of HelloSign 5 senders/accounts are involved, for more accounts the provider need to be requested \parencite{hellosign2018price}. \\ \hline
 	\end{tabular}
-	\caption{text}
-	\label{key}
+	\caption{Summary HelloSign}
+	\label{tab:hellosign}
 \end{table}
 
 \subsection{SignDoc}
-
+This tool is provided by Kofax, a partner of \gls{cc}.
 
 \begin{table}[h]
 	\begin{tabular}{|p{4cm}|p{10cm}|} \hline
@@ -72,7 +71,98 @@ This tool is already in usage at \gls{cc}, but not always and with a lot of manu
 		Accepted documents & \\ \hline
 		Amount of accounts & \\ \hline
 	\end{tabular}
-	\caption{text}
-	\label{key}
+	\caption{Summary SignDoc}
+	\label{tab:signdoc}
 \end{table}
 
+\subsection{Adobe Sign}
+
+\begin{table}[h]
+	\begin{tabular}{|p{4cm}|p{10cm}|} \hline
+		Criterion & Fulfillment \\ \hline
+		Usage without license & yes, but for starting license required\\ \hline
+		Devices independent & web, app iOS and Android (require certain os version) \\ \hline
+		Integration possible & A lot of integration with tools possible, api available \parencite{adobesign2018integration,adobesign2018info} \\ \hline
+		Certified & eIdas \parencite{adobesign2018legal} \\ \hline
+		Easy usage & \\ \hline
+		Costs & Enterprise plan required, but no price published online \parencite{adobesign2018costs} \\ \hline
+		Accepted documents & PDF, Microsoft Word \parencite{adobesign2018info} \\ \hline
+		Amount of accounts & Unknown \\ \hline
+	\end{tabular}
+	\caption{Summary Adobe Sign}
+	\label{tab:adobesign}
+\end{table}
+
+\subsection{SignNow}
+
+\begin{table}[h]
+	\begin{tabular}{|p{4cm}|p{10cm}|} \hline
+		Criterion & Fulfillment \\ \hline
+		Usage without license & \\ \hline
+		Devices independent & \\ \hline
+		Integration possible & \\ \hline
+		Certified & \\ \hline
+		Easy usage & \\ \hline
+		Costs & \\ \hline
+		Accepted documents & \\ \hline
+		Amount of accounts & \\ \hline
+	\end{tabular}
+	\caption{Summary SignNow}
+	\label{tab:signnow}
+\end{table}
+
+\subsection{RightSignature}
+
+\begin{table}[h]
+	\begin{tabular}{|p{4cm}|p{10cm}|} \hline
+		Criterion & Fulfillment \\ \hline
+		Usage without license & \\ \hline
+		Devices independent & \\ \hline
+		Integration possible & \\ \hline
+		Certified & \\ \hline
+		Easy usage & \\ \hline
+		Costs & \\ \hline
+		Accepted documents & \\ \hline
+		Amount of accounts & \\ \hline
+	\end{tabular}
+	\caption{Summary RightSignature}
+	\label{tab:rightsignature}
+\end{table}
+
+\subsection{eSign Live}
+
+\begin{table}[h]
+	\begin{tabular}{|p{4cm}|p{10cm}|} \hline
+		Criterion & Fulfillment \\ \hline
+		Usage without license & \\ \hline
+		Devices independent & \\ \hline
+		Integration possible & \\ \hline
+		Certified & \\ \hline
+		Easy usage & \\ \hline
+		Costs & \\ \hline
+		Accepted documents & \\ \hline
+		Amount of accounts & \\ \hline
+	\end{tabular}
+	\caption{Summary eSign Live}
+	\label{tab:esign}
+\end{table}
+
+\subsection{PandaDoc}
+
+\begin{table}[h]
+	\begin{tabular}{|p{4cm}|p{10cm}|} \hline
+		Criterion & Fulfillment \\ \hline
+		Usage without license & \\ \hline
+		Devices independent & \\ \hline
+		Integration possible & \\ \hline
+		Certified & \\ \hline
+		Easy usage & \\ \hline
+		Costs & \\ \hline
+		Accepted documents & \\ \hline
+		Amount of accounts & \\ \hline
+	\end{tabular}
+	\caption{Summary PandaDoc}
+	\label{tab:pandadoc}
+\end{table}
+
+\subsection{eSignAnyWhere}
