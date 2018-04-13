@@ -2,56 +2,60 @@
 The tool Adobe Sign, which is selected for the research Tool to Sign Electronically, is tested at the 11th April 2018 with the test version of a duration from fifteen days. The test criteria are described in the research. Inside the test also the \gls{app} is included. It is available for iOS and Android, but due to the fact that only an Android smartphone is available, the test will be on that \gls{os}.
 
 \subsection{Registration}
-
-- testing data required: name, mail, phone, company, position, birthdate
-- generates an AdobeID, if not exist
+To register at the tool for testing several data is required like name, mail address, phone number, company, position and birth date. Moreover, an AdobeID is generated if the new user do not has it already. Afterwards the user need to approve the mail address, set a password and can use the tool. The login is later standard. Just enter the mail address and the password.
 
 \subsection{Uploading Documents}
-The web application has to options to upload a document for signing. The first one is a drag and drop function, which is explained in short words at the moment a document should be uploaded. The other option is the file chooser. This is a link that opens a window, where the user can select from which source and directory a document should be imported.
+The web application has to options to upload a document for signing. The first one is a drag and drop function, which is explained in short words at the moment a document should be uploaded. The other option is the file chooser. This is a link that opens a window, where the user can select from which source (computer, stored in the tool or from another cloud storage) and directory a document should be imported.
 
 \subsection{Sharing of Documents}
-
-- entering mail
+To add other people to sign a document only the name of the persons and their mail address need to be added. Moreover, it is possible to add a subject and a message inside the mail, that will be send to all people.
 
 \subsection{Select Order of Signing}
-- possible by enabling functionality
+Adobe Sign offers the opportunity sign documents in a defined sequence. Therefore, this option need to be enabled by setting the requirements for the documents. Afterwards the order could be changed with a drag and drop functionality or add the position number manual.
 
 \subsection{Preparation for Signing}
-- drag and drop, specifi associated to how if multiple signer
-- types: Signature, initial, signatureblock (signature, date, mail), stamp, title, name, company, ....
+To prepare a document for the signing, only a few manual actions need to be done. The required fields need to added to to the document with a drag and drop functionality. In the case that multiple persons need to sign the document the initiator opens with a click on the added filed a drop down menu with all persons inside and select the one who had to fill in this field.
+
+Adobe Sign offers several different field types. Here are some examples: signature, initials, signature block (signature, date and mail address), stamp, name of the person and the company. It is also possible in the enterprise version to customize the fields or create new one.
 
 \subsection{Company Stamp}
-- creation: image, mobile phone
+The tool has the option of the usage from stamps. Therefore, the specific field type need to be added to the document as described previously. In the step of filling the data, the signer has two options to insert the stamp. The one option is to upload a picture from the computer and fit it with the size. The other option is to use the smartphone. The actions need to be done are the following:enter phone number, click te received link, make with it a photo of the stamp or select a photo from the phone, send the picture back to the tool and fit the size.
 
 \subsection{Signing Documents}
+Every person requested to sign a document receives a mail. Only about the link placed in the mail it is possible to sign the documents. By default the following four options are usable to create a signature:
+\begin{enumerate}
+	\item Typing: The person types its name in the declared field and the tool generates from that a signature.
+	\item Drawing: The person draws with his mouse or with the touch pad his signature.  
+	\item Upload image: An image of the signature can be uploaded from the computer or a cloud storage.
+	\item Use the mobile phone: This option is similar to the company stamp. The user enters his phone number and receives a link. By opening this link the user has two options. Either he draw the signature on the smartphone or he uploads/makes an image of the signature.
+\end{enumerate}
 
-- creation of signature: typing, drawing, image, mobile phone
-- agree on signing
+But it is possible to change that in the settings of the account. After filling all the required data, the person need to agree on the usage of the electronically way, but also this is changeable int he settings. 
 
 \subsubsection{One Person}
+It is possible that only one person an sign a document, but there is one requirement: It is not the initiator of the signing process. But in general the process is open the link in the received mail, fill in all required fields and generate a signature or select the existing one (if the user has already an account). Finally he need to agree.
 
 \subsubsection{Multiple Persons}
-- not possible to sign against order
+If multiple persons need to sign a document, it is not possible to sign it if someone else do it at the same moment. If there is a an order, it is not possible to sign against it. The later signer receives the link just if the previous have signed. But the process is the same for everyone as described in the part for one person.
 
 \subsubsection{Unregistered Person}
--create as described above, accept, than could download current version
+For the unregistered person it is the same as described above, the only differences are that he can not select a stored signature and can download the document from the tool. He will receives it with a mail when the document is completely signed.
 
 \subsubsection{Decline Signing}
-- possible by selecting option
-- require reason finish
+Adobe Sign offers the persons who had to sign the option to deny the signature. Therefore, the person had to select this option at the upper left corner of the view and type a reason to finalize the step. 
 
 \subsubsection{Features}
-- assign to some one other to sign
+The tool offers two functionalities not requested in the test scenario. They will be explained below.
 
-- security aspects: password, identity check, 
+\paragraph{Assign some one else to sign} Other users than the the initiator have the option to delegate the signing. Therefore they could select the option in the upper left corner of the document view and enter the name and mail address of the other person and a message and its done. All persons inside the process (also those who delegated it) will receive a mail with the finished document.
 
-- app available, with the same functionalities as web
+\paragraph{Security aspects} To sign a document the initiator can request for access data to sign. That can be an password, an online-identity(Google Account, LinkedIn or Xing) or a knowledge-based authentication(Personal data with later questions). But this is only in the first instance possible. In the case the signing is delegated, the new person do not receive the security request. Moreover, if the security aspect is assigned to the initiator and he signs directly, no request is done. 
 
 \subsection{Status Report}
-- mail 
-- view in web app
+All person involved in the process of signing receives per default the status reports via mail if someone signed or declined the document. The initiator and all persons having an account could see the status also in the tool or the \gls{app}.
 
 \subsection{Availability of Document}
-- no account leads to receive once per mail attached
+The completed documents are send with a mail. In the case the user has an account for the tool, he can see them also in the web application and the \gls{app}. It is also possible to share the complete document from the web application.
 
 \subsection{Personal Impression}
+In general the tool is intuitive and easy to use, also the \gls{app}. The only aspects, which are to be criticized are, that a user can not sign the document from the tool and the look of the tool could be nicer.

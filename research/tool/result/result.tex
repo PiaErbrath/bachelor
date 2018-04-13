@@ -22,7 +22,7 @@ This tool is provided by the company Wacom, which is the customer previously tho
 \subsection{DocuSign}
 This tool is already in usage at \gls{cc}, but not always and with a lot of manual actions and missing things like the company stamp. During the testing a lot of functionalities were figured out. The test protocol is placed in the appendix \ref{sec:docusign}. The table \ref{tab:docusign} below will give a short summary about the test result and other aspects figured out during the research.
 
-\begin{table}[h]
+\begin{table}[h!]
 	\begin{tabular}{|p{4cm}|p{10cm}|} \hline
 		Criterion & Fulfillment \\ \hline
 		Usage without license & Yes, just need to add some information required from the person request the signing like name and mail address for signing. In the case of uploading and managing the documents an account is required.\\ \hline
@@ -38,9 +38,11 @@ This tool is already in usage at \gls{cc}, but not always and with a lot of manu
 	\label{tab:docusign}
 \end{table}
 
+%\clearpage
+
 \subsection{HelloSign}
 The online tool HelloSign is used at the subsidiary company Istana of \gls{cc}. Therefore, it should also taken into account. Not all functionalities could be tested through the fact that for the business version data were requested, the tester was not allowed to give. The result of the test is documented in appendix \ref{sec:hellosign} and a summary of it together with additional information collected from an online research is given in table \ref{tab:hellosign}.
-\begin{table}[h]
+\begin{table}[h!]
 	\begin{tabular}{|p{4cm}|p{10cm}|} \hline
 		Criterion & Fulfillment \\ \hline
 		Usage without license & Signing without account possible, but the signed documents could not be viewed online and uploaded if no account exists. It will be send within a mail. Moreover, there is the fact that the free version only allows to send three documents per month. This leads to the result, that a higher version is required \parencite{hellosign2018price}. \\ \hline
@@ -55,11 +57,12 @@ The online tool HelloSign is used at the subsidiary company Istana of \gls{cc}. 
 	\caption{Summary HelloSign}
 	\label{tab:hellosign}
 \end{table}
+\clearpage
 
 \subsection{SignDoc}
 This tool is provided by Kofax, a partner of \gls{cc}.
 
-\begin{table}[h]
+\begin{table}[h!]
 	\begin{tabular}{|p{4cm}|p{10cm}|} \hline
 		Criterion & Fulfillment \\ \hline
 		Usage without license & \\ \hline
@@ -76,57 +79,40 @@ This tool is provided by Kofax, a partner of \gls{cc}.
 \end{table}
 
 \subsection{Adobe Sign}
-
-\begin{table}[h]
+This tool is a very popular, which is online available. There is a test version for the business plan, which was tested. The protocol is documented in the appndix \ref{sec:adobesign} and the information gathered from the internet research are summarized in table \ref{tab:adobesign} bellow. 
+\begin{table}[h!]
 	\begin{tabular}{|p{4cm}|p{10cm}|} \hline
 		Criterion & Fulfillment \\ \hline
-		Usage without license & yes, but for starting license required\\ \hline
-		Devices independent & web, app iOS and Android (require certain os version) \\ \hline
-		Integration possible & A lot of integration with tools possible, api available \parencite{adobesign2018integration,adobesign2018info} \\ \hline
-		Certified & eIdas \parencite{adobesign2018legal} \\ \hline
-		Easy usage & \\ \hline
-		Costs & Enterprise plan required, but no price published online \parencite{adobesign2018costs} \\ \hline
-		Accepted documents & PDF, Microsoft Word \parencite{adobesign2018info} \\ \hline
-		Amount of accounts & Unknown \\ \hline
+		Usage without license & It is possible to sign documents without having an account, but to start a signing process an account or license is required. \\ \hline
+		Devices independent & The tool has an web application and an \gls{app} for Android and iOS. It has the most functionalities as the web application. \\ \hline
+		Integration possible & Adobe offers in the enterprise plan an \gls{api} and has already a lot of integrations with other tools like Microsoft \parencite{adobesign2018integration,adobesign2018info}. \\ \hline
+		Certified & Adobe Sign fulfills the requirements of the \gls{eidas} and can be used also in the \gls{usa}. \parencite{adobesign2018legal} \\ \hline
+		Easy usage & Adobe created a tool which is simple to understand and use. The requested functionalities are all available and intuitive usable. Only a few actions need to made manual to prepare a document for signing.\\ \hline
+		Costs & For \gls{cc} the enterprise plan is required, but for that plan no costs are published \parencite{adobesign2018costs}. \\ \hline
+		Accepted documents & The tool accepts document formats \gls{pdf}, Microsoft Word and several different images formats \parencite{adobesign2018info}. \\ \hline
+		Amount of accounts & The amount off accounts offered by Adobe are unknown, but it is possible to have one account with multiple users. \\ \hline
 	\end{tabular}
 	\caption{Summary Adobe Sign}
 	\label{tab:adobesign}
 \end{table}
 
 \subsection{SignNow}
-
-\begin{table}[h]
+SignNow is one of lower-priced \gls{es} tool available. With the test version of the functionalities and process of it are tested. The test is protocoled in the appendix \ref{sec:signnow} and the information collected from the internet research are pooled in the table \ref{tab:signnow}.
+\begin{table}[h!]
 	\begin{tabular}{|p{4cm}|p{10cm}|} \hline
 		Criterion & Fulfillment \\ \hline
-		Usage without license & \\ \hline
-		Devices independent & \\ \hline
-		Integration possible & \\ \hline
-		Certified & \\ \hline
-		Easy usage & \\ \hline
-		Costs & \\ \hline
-		Accepted documents & \\ \hline
-		Amount of accounts & \\ \hline
+		Usage without license & The developer of SignNow allow the people to sign documents electronically without having a license or account, but to start a process for signing an account is required.\\ \hline
+		Devices independent & SignNow is an online application, therefore available on every computer with internet connetcion. Moreover, exist an \gls{app} for the \gls{os} iOS and Android. \\ \hline
+		Integration possible & The developer of SignNow provides an \gls{api} and created already integration to other tools like Google Suite \parencite{signnow2018enterprise,signnow2018price}. \\ \hline
+		Certified & SignNow fulfills the requirements of \gls{eidas}. That leads to the fact that they are allowed to be used in the \gls{eu}. Regarding the circumstance that the tool was developed in the \gls{usa} it is aloso usable there \parencite{signnow2018legal}. \\ \hline
+		Easy usage & The tool fulfills most of the requested functionalities excepted the company stamp, instead some other features are available. But inside different browsers another guidance is given. Moreover, the fields need to be set manually
+		\\ \hline
+		Costs & \Gls{cc} requires the enterprise plan, but for that plan nop rice is published and need to be requested \parencite{signnow2018price}. \\ \hline
+		Accepted documents & In the internet there is no information available regarding the acceptance of document types. The document types tested based on the scenario described in section \ref{sec:criteria} are accepted.\\ \hline
+		Amount of accounts & Inthe standard plans for each user an account need to be created. How does it look in the enterprise plan is not documented. \\ \hline
 	\end{tabular}
 	\caption{Summary SignNow}
 	\label{tab:signnow}
-\end{table}
-
-\subsection{RightSignature}
-
-\begin{table}[h]
-	\begin{tabular}{|p{4cm}|p{10cm}|} \hline
-		Criterion & Fulfillment \\ \hline
-		Usage without license & \\ \hline
-		Devices independent & \\ \hline
-		Integration possible & \\ \hline
-		Certified & \\ \hline
-		Easy usage & \\ \hline
-		Costs & \\ \hline
-		Accepted documents & \\ \hline
-		Amount of accounts & \\ \hline
-	\end{tabular}
-	\caption{Summary RightSignature}
-	\label{tab:rightsignature}
 \end{table}
 
 \subsection{eSign Live}
@@ -166,3 +152,19 @@ This tool is provided by Kofax, a partner of \gls{cc}.
 \end{table}
 
 \subsection{eSignAnyWhere}
+
+\begin{table}[h]
+	\begin{tabular}{|p{4cm}|p{10cm}|} \hline
+		Criterion & Fulfillment \\ \hline
+		Usage without license & \\ \hline
+		Devices independent & \\ \hline
+		Integration possible & \\ \hline
+		Certified & \\ \hline
+		Easy usage & \\ \hline
+		Costs & \\ \hline
+		Accepted documents & \\ \hline
+		Amount of accounts & \\ \hline
+	\end{tabular}
+	\caption{Summary eSignAnyWhere}
+	\label{tab:esignany}
+\end{table}
