@@ -1,0 +1,88 @@
+\section{Criteria \& Weightings} \label{sec:criteria}
+Inside this section the different criteria are explained and divided in their
+weighted categories. The criteria are the following:
+\begin{itemize}
+	\item Integration \newline
+	Weight: 8 \newline
+		The most important criterion is the integration, because the tool should be interact with the \gls{erp} and the Google Suite used by \gls{cc}. In the best case all the tools should be used as once. This means they are in such a way integrated with each other, that the end user do not need to switch the applications. \newline
+		This criterion is a knockout criteria. In the case it is not fulfilled the tool will be automatically ignored for the process realization. 
+	\item Device independent \newline
+	Weight: 7 \newline
+	Due to the fact that all employees of \gls{cc} have different \gls{os} for their computer and smart phones, should be the tool hardware independent. Furthermore, it is stated that the employees and execution board is not always at the buildings of the company available, doing home office or working by the customers. This leads to the preference of having \gls{app} for the tool, so that the employees of \gls{cc} can sign the documents every where they are independent of their device available.\newline
+	This criterion is a knockout criteria. In the case it is not fulfilled the tool will be automatically ignored for the process realization. 
+	\item Usability \newline
+	Weight: 6 \newline
+	Another requirement is the usability. For the reason that several employees should use the tool, it need to be simple to use. There should be no long learning time and the handling need be intuitive or at least the tool should provide information about buttons or next steps. In the best case the tool has a lot of automated processes, so that the user do not care about what to add where and with which information.
+	\item Costs \newline
+	Weight: 5 \newline
+	It is important to have the costs in focus. If they are to high the cost-benefit ratio will be negative and the effect of the new process for \gls{cc} is non existing. The areas pricing model, access to functionalities and amount of accounts fall into this category.
+	\item Accepted file formats \newline
+	Weight: 4 \newline
+	\Gls{cc} uses in general three different file formats for their documents. It should with the tool possible to use them in the future with the tool to sign the documents without converting them into another format.
+	\item Operating mode \newline
+	Weight: 3 \newline
+	Another criterion is the operating mode. That means runs the tool as \gls{saas} or \gls{op}, need \gls{cc} provide its own server and need to care about its security and backup or does the provider of the tool offers this within his plan. This influence also the costs of the tool.
+%	\item Market position \newline
+%	Weight: 3 \newline
+%	With this criterion a bit the further development of the tool could be figured out. Depending of the amount of users and the numbers of competitors, the provider of the tools may improve and develop them further. For \gls{cc} this is important, because they want to use the tool as long as possible with no security issues.
+	\item Additional security \newline
+	Weight: 2 \newline
+	To be sure that the correct person use the service and to increase the security, \gls{cc} uses the Two-Factor authentication for most systems and tools they use. This should be also available for the signature tool.
+	\item Legal aspects \newline
+	Weight: 1 \newline
+	The tool should satisfy certain legal standards, so that \gls{cc} could be use the signing as evidence. This is also important in respect to further use cases for the tool at \gls{cc}, where a higher standard exist than for quotes.
+\end{itemize}
+
+The table \ref{tab:resTcateg} displays the different categories for each criterion and shows
+their weighting. The best weighting is (+ +) and the worst is (- -).
+
+%\begin{table}[h!]
+	\begin{longtable}{|p{4cm}|p{9cm}|p{1.5cm}|} \hline
+		Criterion & Category & Weighting \\ \hline
+		\multirow{4}{*}{Integration} & No & - - \\ \cline{2-3}
+									& Tools for workflow building & o \\ \cline{2-3}
+									& \Gls{api} and/or \gls{sdk} & + \\ \cline{2-3}
+									& Predefined integrations for tools at \gls{cc} exists already & + + \\ \hline
+		\multirow{7}{*}{Device independent} & Additional hardware required & - - \\ \cline{2-3}
+											& \Gls{app} only for certain \gls{os} for Desktop & - - \\ \cline{2-3}
+											& \Gls{app} only for certain \gls{os} for smart phone & - - \\ \cline{2-3} 
+											& \Gls{app} only for Desktop & - \\ \cline{2-3}
+											& \Gls{app} only for smart phone & o \\ \cline{2-3}
+											& \Gls{app} only for programmed devices & o \\ \cline{2-3}
+											& Independent \gls{app} & + + \\ \hline
+		\multirow{4}{*}{Usability} & A lot of actions to set required fields \& activate sharing & - - \\ \cline{2-3}
+								    & A few actions to set required fields \& activate sharing & o \\ \cline{2-3}
+									& A few actions to set required fields \& activate sharing \& company stamp can be recorded & + \\ \cline{2-3}
+									& Recognize where to set fields \& company stamp can be recorded & + + \\ \hline
+		\multirow{5}{*}{Costs}  & Every document & - - \\ \cline{2-3}
+								& Each active user & - - \\ \cline{2-3}
+								& One license per company $>$ 5000 \euro per year & - \\ \cline{2-3}
+								& One license per company $\leqslant$ 5000 \euro per year & + \\ \cline{2-3}
+								& Nothing & + + \\ \hline
+		\multirow{4}{*}{Accepted file formats} & Special type & - - \\ \cline{2-3}
+												& \Gls{pdf} & o \\ \cline{2-3}
+												& \Gls{pdf} \& Microsoft Word (doc, docx) & + \\ \cline{2-3}
+												& \Gls{pdf}, Microsoft Word \& Open Office Writer(odt) & + + \\ \hline
+		\multirow{2}{*}{Operating mode} & \gls{op} & o \\ \cline{2-3}
+										 & \gls{saas} & + + \\ \hline
+%		\multirow{4}{*}{Market position} & Market position $<= 1\%$ & - \\ \cline{2-3}
+%										& Market position $<=10\% > 1\%$ & o \\ \cline{2-3}
+%										& Market position $<=20\% > 10\%$ & + \\ \cline{2-3}
+%										& Market position $ > 20\%$ & + + \\ \hline
+		\multirow{6}{*}{Additional security} & None & - - \\ \cline{2-3}
+											& Question and Answer & o \\ \cline{2-3} 
+											& Online identity & o \\ \cline{2-3}
+											& Authentication with mobile phone & + \\ \cline{2-3}
+											& Authentication with video, personal ID or similar & + + \\ \cline{2-3}
+											& Certification & + + \\ \hline
+		\multirow{4}{*}{Legal aspects} & No & - - \\ \cline{2-3}
+										& Germany only & o \\ \cline{2-3}
+										& \Gls{eu} only & + \\ \cline{2-3}
+										& Worldwide & + + \\ \hline
+	\caption{Categories and their weighings}
+	\label{tab:resTcateg}
+	\end{longtable}
+%	\caption{Categories and their weighings}
+%	\label{tab:resTcateg}
+%\end{table}
+%\newpage
