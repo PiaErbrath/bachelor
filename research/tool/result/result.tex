@@ -76,13 +76,13 @@ The online tool HelloSign is used at the subsidiary company Istana of \gls{cc}. 
 \clearpage
 
 \subsection{SignDoc}
-This tool is provided by Kofax, a partner of \gls{cc}.
+This tool is provided by Kofax, a partner of \gls{cc}. But due to the fact, that the testing was not possible through installation and runtime problems, the test was canceled and no further research is done, because of the not fulfillment of one knockout criteria. 
 
 \begin{table}[h!]
 	\begin{tabular}{|p{4cm}|p{10cm}|} \hline
 		Criterion & Fulfillment \\ \hline
-		Integration & \\ \hline
-		Device independent & \\ \hline
+		Integration & There is an \gls{sdk} available \parencite{kofax2018sdk}. \\ \hline
+		Device independent & It should work most \gls{os} \parencite{kofax2018sdk}, but for the testing there were big problems to get it runnable on Windows and Linux \gls{os}. Moreover, the browser plug-in was not accepted by the browser Google Chrome and Morzilla Firefox. \\ \hline
 		Usability & \\ \hline
 		Costs & \\ \hline
 		Accepted file formats & \\ \hline
@@ -134,17 +134,17 @@ SignNow is one of lower-priced \gls{es} tool available. With the test version of
 \end{table}
 
 \subsection{eSign Live}
-Another tool that is taken into account is eSign Live, which is owned by the company VASCO and is placed in Canada. It has an extended documentation. The test result is shown in appendix \ref{sec:esign} and the result from the test impression and internet research is summarized in table \ref{tab:esign}.
+Another tool that is taken into account is eSign Live, which is owned by the company VASCO and is placed in Canada. The test result is shown in appendix \ref{sec:esign} and the result from the test impression and internet research is summarized in table \ref{tab:esign}.
 \begin{table}[h!]
 	\begin{tabular}{|p{4cm}|p{10cm}|} \hline
 		Criterion & Fulfillment \\ \hline
-		Integration & \\ \hline
-		Device independent & \\ \hline
-		Usability & \\ \hline
+		Integration & In the enterprise plan the tool provides an \gls{api}. \parencite{esign2018info} \\ \hline
+		Device independent & eSign live is a system, that has an web application and has \glspl{app} for iOS and Android. \parencite{esign2018info} \\ \hline
+		Usability & The tool is simple to use and has the functionalities requires by \gls{cc}. Only the declining functionality and the company stamp option are not available. Moreover, are other functionalities available like the in-person signing. Both, the \gls{app} and the web application are intuitive usable.  \\ \hline
 		Costs & \\ \hline
-		Accepted file formats & \\ \hline
-		Operating mode & \\ \hline
-		Additional security & \\ \hline
+		Accepted file formats & Tested and accepted are \gls{pdf}, Microsoft Word, Open Office and JPG formats. There exists no information online.\\ \hline
+		Operating mode & The tool is completely available as \gls{saas}.\\ \hline
+		Additional security & The tool provides three different authentication methods: answering on questions, access code authentication via SMS or knowledge-based authentication (point of time 2015 only American ID) \parencite{esign2018security} \\ \hline
 		Legal aspects & \\ \hline
 	\end{tabular}
 	\caption{Summary eSign Live}
@@ -152,18 +152,18 @@ Another tool that is taken into account is eSign Live, which is owned by the com
 \end{table}
 
 \subsection{PandaDoc}
-
+PandaDoc is tool, which was also a tool, which was mentioned by \gls{cc}. It has more functionalities than only signing of documents. The test protocol is placed in appendix \ref{sec:pandadoc} and the result is summarized along with other information from the internet in teable \ref{tab:pandadoc}. 
 \begin{table}[h!]
 	\begin{tabular}{|p{4cm}|p{10cm}|} \hline
 		Criterion & Fulfillment \\ \hline
-		Integration & \\ \hline
-		Device independent & \\ \hline
-		Usability & \\ \hline
+		Integration & PandaDoc offers already integrations for HubSpot and Google Drive, both used or available at \gls{cc} \parencite{pandadoc2018integration}. Additionally, an \gls{api} exist, which can be used to create individual integrations \parencite{pandadoc2018api}. \\ \hline
+		Device independent & The tool is online available and has \glspl{app} for Android and iOS. \\ \hline
+		Usability & The basic functionalities are available, but not all like the company stamp. In general some drag-and-drop actions need to be taken to prepare the document for the signing. Additionally, some more functionalities exists like the document creation.\\ \hline
 		Costs & \\ \hline
-		Accepted file formats & \\ \hline
-		Operating mode & \\ \hline
-		Additional security & \\ \hline
-		Legal aspects & \\ \hline
+		Accepted file formats & Inthe test it was figured out that \gls{pdf} and Microsoft Word is accepted along with images formats. Open Office is not accepted. \\ \hline
+		Operating mode & The provider offers the tool as \gls{saas} application. \parencite{pandadoc2018saas} \\ \hline
+		Additional security & Not presented and nothing for testing available. \\ \hline
+		Legal aspects & PandaDoc fulfills the requirements of the \gls{eidas} and the standards from \gls{usa}. \parencite{pandadoc2018saas} \\ \hline
 	\end{tabular}
 	\caption{Summary PandaDoc}
 	\label{tab:pandadoc}
@@ -174,15 +174,17 @@ Another tool that is taken into account is eSign Live, which is owned by the com
 \begin{table}[h!]
 	\begin{tabular}{|p{4cm}|p{10cm}|} \hline
 		Criterion & Fulfillment \\ \hline
-		Usage without license & \\ \hline
-		Devices independent & \\ \hline
-		Integration possible & \\ \hline
-		Certified & \\ \hline
-		Easy usage & \\ \hline
+		Integration & \\ \hline
+		Device independent & The system is device independent and offers \glspl{app} for iOS and Android. \parencite{signAny2018info} \\ \hline
+		Usability & \\ \hline
 		Costs & \\ \hline
-		Accepted documents & \\ \hline
-		Amount of accounts & \\ \hline
+		Accepted file formats & no odt \\ \hline
+		Operating mode &  The tool is available as \gls{saas} or as \gls{op} \parencite{signAny2018info}. \\ \hline
+		Additional security & \\ \hline
+		Legal aspects & \\ \hline
 	\end{tabular}
 	\caption{Summary eSignAnyWhere}
 	\label{tab:esignany}
 \end{table}
+
+\subsection{In-House Production}
