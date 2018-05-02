@@ -34,29 +34,33 @@ weighted categories. The criteria are the following:
 \end{itemize}
 
 The table \ref{tab:resTcateg} displays the different categories for each criterion and shows
-their weighting. The best weighting is (+ +) and the worst is (- -).
+their weighting. The best weighting is (+ +) and the worst is (- -). \newpage
 
 %\begin{table}[h!]
 	\begin{longtable}{|p{4cm}|p{9cm}|p{1.5cm}|} \hline
 		Criterion & Category & Weighting \\ \hline
-		\multirow{4}{*}{Integration} & No & - - \\ \cline{2-3}
+		\multirow{6}{*}{Integration} & No & - - \\ \cline{2-3}
 									& Tools for workflow building & o \\ \cline{2-3}
+									& Predefined integrations for some tools at \gls{cc} exists already & o \\ \cline{2-3}
 									& \Gls{api} and/or \gls{sdk} & + \\ \cline{2-3}
-									& Predefined integrations for tools at \gls{cc} exists already & + + \\ \hline
-		\multirow{7}{*}{Device independent} & Additional hardware required & - - \\ \cline{2-3}
-											& \Gls{app} only for certain \gls{os} for Desktop & - - \\ \cline{2-3}
-											& \Gls{app} only for certain \gls{os} for smart phone & - - \\ \cline{2-3} 
-											& \Gls{app} only for Desktop & - \\ \cline{2-3}
-											& \Gls{app} only for smart phone & o \\ \cline{2-3}
-											& \Gls{app} only for programmed devices & o \\ \cline{2-3}
-											& Independent \gls{app} & + + \\ \hline
-		\multirow{4}{*}{Usability} & A lot of actions to set required fields \& activate sharing & - - \\ \cline{2-3}
+									& \Gls{api} and/or \gls{sdk} \& predefined integrations for some tools that are already in usage & + + \\ \cline{2-3}
+									& Predefined integrations for all tools used at \gls{cc} & + + \\ \hline 
+		\multirow{8}{*}{Device independent} & Additional hardware required & - - \\ \cline{2-3}
+											& Only for certain \gls{os} for Desktop & - - \\ \cline{2-3}
+											& Only for certain \gls{os} for smart phone & - - \\ \cline{2-3} 
+											& Only for Desktop & - \\ \cline{2-3}
+											& Only for smart phone & o \\ \cline{2-3}
+											& Only for programmed devices & o \\ \cline{2-3}
+											& Only web application & + \\ \cline{2-3}
+											& With web application and for all \gls{os} of smart phone and Desktop & + + \\ \hline
+		\multirow{5}{*}{Usability} & A lot of actions to set required fields \& activate sharing & - - \\ \cline{2-3}
 								    & A few actions to set required fields \& activate sharing & o \\ \cline{2-3}
 									& A few actions to set required fields \& activate sharing \& company stamp can be recorded & + \\ \cline{2-3}
+									& Recognize where to set fields & + \\ \cline{2-3}
 									& Recognize where to set fields \& company stamp can be recorded & + + \\ \hline
 		\multirow{5}{*}{Costs}  & Every document & - - \\ \cline{2-3}
-								& Each active user & - - \\ \cline{2-3}
-								& One license per company $>$ 5000 \euro per year & - \\ \cline{2-3}
+								& Each active user & - \\ \cline{2-3}
+								& One license per company $>$ 5000 \euro per year & o \\ \cline{2-3}
 								& One license per company $\leqslant$ 5000 \euro per year & + \\ \cline{2-3}
 								& Nothing & + + \\ \hline
 		\multirow{4}{*}{Accepted file formats} & Special type & - - \\ \cline{2-3}
@@ -75,10 +79,11 @@ their weighting. The best weighting is (+ +) and the worst is (- -).
 											& Authentication with mobile phone & + \\ \cline{2-3}
 											& Authentication with video, personal ID or similar & + + \\ \cline{2-3}
 											& Certification & + + \\ \hline
-		\multirow{4}{*}{Legal aspects} & No & - - \\ \cline{2-3}
-										& Germany only & o \\ \cline{2-3}
-										& \Gls{eu} only & + \\ \cline{2-3}
-										& Worldwide & + + \\ \hline
+		\multirow{6}{*}{Legal aspects} & No & - - \\ \cline{2-3}
+										& \gls{eidas} fulfilled with \gls{ses} & - \\ \cline{2-3}
+										& \gls{eidas} \& \glossary{gdpr} fulfilled with \gls{ses} & o \\ \cline{2-3}
+										& \gls{eidas} \& \glossary{gdpr} fulfilled with \gls{aes} or \gls{qes} & + \\ \cline{2-3}
+										& \gls{eidas} \& \glossary{gdpr} fulfilled with \gls{qes} or \gls{qes} \& global accepted & + + \\ \hline
 	\caption{Categories and their weighings}
 	\label{tab:resTcateg}
 	\end{longtable}

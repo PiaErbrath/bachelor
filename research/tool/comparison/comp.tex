@@ -1,14 +1,19 @@
 \section{Comparison} \label{sec:compT}
 This section will compare the the result of the research. Therefore a summary is done and afterwards the comparison.
-Based on the criteria defined in section \ref{sec:criteria} the different types of \gls{es} are summarized with the regarding weight. That is done in Table \ref{tab:summary}.
+Based on the criteria defined in section \ref{sec:criteria} the different tools are summarized with the regarding weight. That is done in Table \ref{tab:summary}. In the case there is no information available a "/" is used to visualize it.
 
 \begin{table}[h]
-	\begin{tabular}{|c|c|c|c|c|} \hline
-%		\multirow{2}{*}{Criterion} & \multicolumn{4}{|c|}{Signature Type} \\
-%		& \gls{ses} & \gls{aes} & \gls{qes} & \gls{bs} \\ \cline{1-5}
-%		Verifiability & 0 & + & + + & o \\ \hline
-%		Usability & ++ & ++ & + + & - \\ \hline
-%		Extra hardware required & + + & + + & o & o \\ \hline
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|} \hline
+		Criterion & \multicolumn{9}{c}{Tool} \\
+				& \rotatebox{90}{Wacom} & \rotatebox{90}{DocuSign} & \rotatebox{90}{HelloSign} & \rotatebox{90}{SignDoc} & \rotatebox{90}{Adobe Sign} & \rotatebox{90}{SignNow} & \rotatebox{90}{eSign Live} & \rotatebox{90}{PandaDoc} & \rotatebox{90}{eSignAnyWhere} \\ \hline
+		Integration & - - & + + & + + & + & + + & + + & + & + + & + \\ \hline
+		Device Independent & - - & + + & + + & - - & + + & + + & + + & + + & + + \\ \hline
+		Usability & / & + & o &  / & o & o & o & o & + + \\ \hline
+		Costs & / & o & o & / & / & ? & ? & o & ? \\ \hline
+		Accepted file formats & / &  + & + + & / & + & + + & + + & + & + \\ \hline
+		Operating mode & / & + + & + + & / & + + & + + & + + & + + & + + \\ \hline
+		Additional security & / & + + & + & / & + + & + & + & - - & + \\ \hline
+		Legal aspects & / & ? & ? & / & ? & ? & ? & ? & ? \\ \hline 
 	\end{tabular}
 	\centering
 	\caption{Summary of electronic signature types based on criteria}
@@ -18,9 +23,9 @@ Based on the criteria defined in section \ref{sec:criteria} the different types 
 To make a better comparison of the different \gls{es} types, a translation from weighting to points is done in table \ref{Tab:Translation} which is used in a later calculation.
 
 \begin{table}[h]
-	\begin{tabular}{|c|c|c|c|c|c|} \hline
-		Weight & - - & - & o & + & + + \\ \hline
-		Points & -2 & -1 & 0 & 1 & 2 \\ \hline
+	\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+		Weight & / & - - & - & o & + & + + \\ \hline
+		Points & -10 & -2 & -1 & 0 & 1 & 2 \\ \hline
 	\end{tabular}
 	\centering
 	\caption{Translation of weights in points}
@@ -31,16 +36,21 @@ To get a complete image of the result the translated weights are multiplied with
 \begin{center}
 	\textit{Sum = Importance Criterion * Points of Weight}
 \end{center}
-The result of that calculation is presented in table \ref{Tab:comp}.
+The result of that calculation is presented in table \ref{Tab:comp}. If a tool has more than one "/", it is ignored, due to the 
 
 \begin{table}[H]
-	\begin{tabular}{|c|c|c|c|c|} \hline
-%		\multirow{2}{*}{Criterion} & \multicolumn{4}{|c|}{Signature Type}\\
-%		& \gls{ses} & \gls{aes} & \gls{qes} & \gls{bs} \\ \cline{1-5}
-%		Verifiability 			& 0 & 3 & 6 & 0 \\ \hline
-%		Usability 				& 4 & 4 & 4 & -2 \\ \hline
-%		Extra hardware required & 2 & 0 & 0 & 0 \\ \hline \hline
-%		Total sum				& 6 & 7 & 10 & -2 \\ \hline
+	\begin{tabular}{|c|c|c|c|c|c|c|c|} \hline
+		Criterion & \multicolumn{7}{c}{Tool} \\
+		 & \rotatebox{90}{DocuSign} & \rotatebox{90}{HelloSign}  & \rotatebox{90}{Adobe Sign} & \rotatebox{90}{SignNow} & \rotatebox{90}{eSign Live} & \rotatebox{90}{PandaDoc} & \rotatebox{90}{eSignAnyWhere} \\ \hline
+		Integration 	      & 16 & 16 & 16 & 16 & 8 & 16 & 8 \\ \hline
+		Device Independent    & 14 & 14 & 14 & 14 & 14 & 14 & 14 \\ \hline
+		Usability 		   	  & 6  & 0 & 0 & 0 & 0 & 0 & 12 \\ \hline
+		Costs 			   	  & 0  & 0 & -50 & ? & ? & 0 & ? \\ \hline
+		Accepted file formats & 4  & 8  & 4 & 8 & 8 & 4 & 4 \\ \hline
+		Operating mode 		  & 6  & 6 & 6 & 6 & 6 & 6 & 6 \\ \hline
+		Additional security   & 4  & 2  & 4 & 2 & 2 & -8 & 2 \\ \hline
+		Legal aspects         & ?  & ? & ? & ? & ? & ? & ? \\ \hline 
+		Total Sum             &  & & & & & &\\ \hline
 	\end{tabular}
 	\centering
 	\caption{Comparison of electronic signature types}
