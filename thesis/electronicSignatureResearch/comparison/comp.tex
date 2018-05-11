@@ -27,9 +27,12 @@ To make a better comparison of the different \gls{es} types, a translation from 
 	\label{Tab:Translation}
 \end{table}
 
-To get a complete image of the result the translated weights are multiplied with the importance of the criterion. To make it visible:
+To get a complete image of the result the translated weights are multiplied with the importance of the criterion. To make it visible: 
+
 \begin{center}
-	\textit{Sum = Importance Criterion * Points of Weight}
+\fbox{
+	\parbox[centering]{7.5cm}{\textit{Sum = Importance Criterion * Points of Weight}}
+}
 \end{center}
 The result of that calculation is presented in table \ref{Tab:comp}.
 
@@ -39,8 +42,8 @@ The result of that calculation is presented in table \ref{Tab:comp}.
 									& \gls{ses} & \gls{aes} & \gls{qes} & \gls{bs} \\ \cline{1-5}
 		Verifiability 			& 0 & 3 & 6 & 0 \\ \hline
 		Usability 				& 4 & 4 & 4 & -2 \\ \hline
-		Extra hardware required & 2 & 0 & 0 & 0 \\ \hline \hline
-		Total sum				& 6 & 7 & 10 & -2 \\ \hline
+		Extra hardware required & 2 & 2 & 0 & 0 \\ \hline \hline
+		Total sum				& 6 & 9 & 10 & -2 \\ \hline
 	\end{tabular}
 	\centering
 	\caption{Comparison of electronic signature types}

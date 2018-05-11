@@ -46,12 +46,12 @@ The \gls{aes} has a different requirement than the \gls{ses}. It needs to be uni
 
 The most used technology for that is the \gls{pki} \parencite{CEFd2018}. This technology exist out of two keys that are connected with each other, so called public and private key. The private key needs to be always by the owner and should not get public, because then it is interrupted and the owner is not stable identifiable anymore. The public key is known by all parties documents and needs to be exchanged. Also, the algorithm used for an encryption must be published to all persons requiring it. The process is then the following:
 \begin{enumerate}
-	\item The signer calculates the \gls{ds} of the document to be signed.
-	\item The \gls{ds} is encrypted through the private key of the signer.
+	\item The signer calculates the \gls{ds}, also called hash, of the document to be signed.
+	\item The \gls{ds} is encrypted through the private key of the signer and not the complete document. In the most cases the encrypted \gls{ds} is added to the document.
 	\item The signer sends the document and the encrypted \gls{ds} to the contract partner.
-	\item The contract partner receives data.
+	\item The contract partner receives the data.
 	\item The contract partner decrypts the encrypted \gls{ds}.
-	\item The contract partner calculates on its own the \gls{ds} of the signed document.
+	\item The contract partner calculates on its own the \gls{ds} of the received document.
 	\item The contract partner compares the calculated \gls{ds} with the decrypted \gls{ds}. Depending on the results two situations could occur: 
 	\begin{enumerate}
 		\item Both \glspl{ds} are equal: \newline The signer is verified, because the decryption was correctly and the content of the document is not changed, cause the value is equal.
