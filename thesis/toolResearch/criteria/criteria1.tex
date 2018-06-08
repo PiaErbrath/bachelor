@@ -1,0 +1,86 @@
+\section{Criteria \& Weightings} \label{sec:criteria}
+Inside this section the different criteria are explained and divided in their
+weighted categories. The criteria are the following:
+\begin{itemize}
+	\item Integration \newline
+	Weight: 8 \newline
+		The most important criterion is the integration, because the tool should be interact with the \gls{erp} and the Google Suite used by \gls{cc}. In the best case all the tools can be used in one system. This means they are in such a way integrated with each other, that the end user do not need to switch the applications. \newline
+		This criterion is a knockout criterion. In the case it is not fulfilled the tool will be automatically ignored for the process realization. 
+	\item Device independent \newline
+	Weight: 7 \newline
+	Due to the fact that all employees of \gls{cc} have different \gls{os} for their computer and smart phones, should be the tool hardware independent. Furthermore, it is stated that the employees and execution board is not always at the buildings of the company available, doing home office or working by the customers. This leads to the preference of having \gls{app} for the tool, so that the employees of \gls{cc} can sign the documents everywhere they are independent of their device available.\newline
+	This criterion is a knockout criterion. In the case it is not fulfilled the tool will be automatically ignored for the process realization. 
+	\item Usability \newline
+	Weight: 6 \newline
+	Another requirement is the usability. For the reason that several employees should use the tool, it need to be simple to use. There should be no long learning time and the handling need be intuitive or at least the tool should provide information about buttons or next steps. In the best case the tool has a lot of automated processes, so that the user do not care about what to add where and with which information.
+	\item Costs \newline
+	Weight: 5 \newline
+	It is important to have the costs in focus. If they are too high the cost-benefit ratio will be negative and the effect of the new process for \gls{cc} is non existing. The areas pricing model, access to functionalities and amount of accounts fall into this category. For this research price information for 2.400 documents and 80 users should be collected and then calculate this price for one document to get information about the price per document. The classification should be done based on the average of all tools taken into account.
+	\item Accepted file formats \newline
+	Weight: 4 \newline
+	\Gls{cc} uses in general three different file formats for their documents. It should with the tool possible to use them in the future with the tool to sign the documents without converting them into another format.
+	\item Operating mode \newline
+	Weight: 3 \newline
+	Another criterion is the operating mode. That means runs the tool as \gls{saas} or \gls{op}, need \gls{cc} provide its own server and need to care about its security and backup or does the provider of the tool offers this within his plan. This influence also the costs of the tool.
+	\item Additional security \newline
+	Weight: 2 \newline
+	To be sure that the correct person use the service and to increase the security, \gls{cc} uses the Two-Factor authentication for most systems and tools they use. This should be also available for the signature tool.
+	\item Legal aspects \newline
+	Weight: 1 \newline
+	The tool should satisfy certain legal standards, so that \gls{cc} could be use the signing as evidence. This is also important in respect to further use cases for the tool at \gls{cc}, where a higher standard exist than for quotes.
+\end{itemize}
+
+The table \ref{tab:resTcateg} displays the different categories for each criterion and shows
+their weighting. The best weighting is (+ +) and the worst is (- -). 
+
+%\begin{table}[h!]
+	\begin{longtable}{|p{4cm}|p{9cm}|p{1.5cm}|} \hline
+		\rowcolor{Gray}Criterion & Category & Weighting \\ \hline
+		\multirow{6}{*}{Integration} & No & - - \\ \cline{2-3}
+									& Tools for workflow building & o \\ \cline{2-3}
+									& Predefined integrations for some tools at \gls{cc} exists already & o \\ \cline{2-3}
+									& \Gls{api} and/or \gls{sdk} & + \\ \cline{2-3}
+									& \Gls{api} and/or \gls{sdk} \& predefined integrations for some tools that are already in usage & + + \\ \cline{2-3}
+									& Predefined integrations for all tools used at \gls{cc} & + + \\ \hline 
+		\multirow{8}{*}{Device independent} & Additional hardware required & - - \\ \cline{2-3}
+											& Only for certain \gls{os} for Desktop & - - \\ \cline{2-3}
+											& Only for certain \gls{os} for smart phone & - - \\ \cline{2-3} 
+											& Only for Desktop & - \\ \cline{2-3}
+											& Only for smart phone & o \\ \cline{2-3}
+											& Only for programmed devices & o \\ \cline{2-3}
+											& Only web application & + \\ \cline{2-3}
+											& With web application and for all \gls{os} of smart phone and Desktop & + + \\ \hline
+		\multirow{5}{*}{Usability} & A lot of actions to set required fields \& activate sharing & - - \\ \cline{2-3}
+								    & A few actions to set required fields \& activate sharing & o \\ \cline{2-3}
+									& A few actions to set required fields \& activate sharing \& company stamp can be recorded & + \\ \cline{2-3}
+									& Recognize where to set fields & + \\ \cline{2-3}
+									& Recognize where to set fields \& company stamp can be recorded & + + \\ \hline
+		\multirow{5}{*}{Costs}  & $ \textgreater +25\% \varnothing $ & - - \\ \cline{2-3}
+								& $ \textgreater \varnothing \& \leq +25\% \varnothing $ & - \\ \cline{2-3}
+								& $ \textgreater -25\% \varnothing \& \leq \varnothing  $ & o \\ \cline{2-3}
+								& $ \textgreater -50\% \varnothing \& \leq -25\% \varnothing $ & + \\ \cline{2-3}
+								& $ \leq -50\% \varnothing $ & + + \\ \hline
+		\multirow{4}{*}{Accepted file formats} & Special type & - - \\ \cline{2-3}
+												& \Gls{PDF} & o \\ \cline{2-3}
+												& \Gls{PDF} \& Microsoft Word (doc, docx) & + \\ \cline{2-3}
+												& \Gls{PDF}, Microsoft Word \& Open Office Writer(odt) & + + \\ \hline
+		\multirow{2}{*}{Operating mode} & \gls{op} & o \\ \cline{2-3}
+										 & \gls{saas} & + + \\ \hline
+		\multirow{6}{*}{Additional security} & None & - - \\ \cline{2-3}
+											& Question and Answer & o \\ \cline{2-3} 
+											& Online identity & o \\ \cline{2-3}
+											& Authentication with mobile phone & + \\ \cline{2-3}
+											& Authentication with video, personal ID or similar & + + \\ \cline{2-3}
+											& Certification & + + \\ \hline
+		\multirow{6}{*}{Legal aspects} & No & - - \\ \cline{2-3}
+										& \gls{eidas} fulfilled with \gls{ses} & - \\ \cline{2-3}
+										& \gls{eidas} \& \glossary{gdpr} fulfilled with \gls{ses} & o \\ \cline{2-3}
+										& \gls{eidas} \& \glossary{gdpr} fulfilled with \gls{aes} or \gls{qes} & + \\ \cline{2-3}
+										& \gls{eidas} \& \glossary{gdpr} fulfilled with \gls{aes} or \gls{qes} \& global accepted & + + \\ \hline
+	\caption{Categories and their weighings}
+	\label{tab:resTcateg}
+	\end{longtable}
+%	\caption{Categories and their weighings}
+%	\label{tab:resTcateg}
+%\end{table}
+%\newpage

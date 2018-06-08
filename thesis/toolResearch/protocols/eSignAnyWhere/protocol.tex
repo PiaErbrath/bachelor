@@ -1,0 +1,87 @@
+\section{Test Protocol eSignAnyWhere}
+\label{sec:signAny}
+The system eSignAnyWhere is tested at the 23rd April 2018. The test is defined in the research ''Tools to Sign Documents Electronically'' and the result is presented in this protocol. For the tool several \glspl{app} are available, but the testing was not possible due to the fact there is an unclear handling behind.
+
+\subsection{Registration}
+The registration for the trail is done fast. The user need to add some information and can test the tool for 30th days. The information required are: name of the user, country, language, time zone the user works general, mail address and a password, which need to be confirmed. If they are entered, the user need to verify the mail.
+In general the login is done with the mail address and the password selected.
+
+\subsection{Uploading Documents}
+eSignAnyWhere offers several options to add documents for signing:
+\begin{itemize}
+	\item Template: In the tool the user has the options to create templates. Those could be used for starting a signing process.
+	\item Upload from local computer: Another option is the uploading of a document from the local computer. A window pops up with a file chooser, where the user can delegate to the storage of the document. 
+	\item Upload from another \gls{saas} tool: Furthermore, the option exist to upload documents from other online storage. Reachable from the tool are Dropbox, Google Drive, OneDrive and Box.
+\end{itemize}
+Additional there is the opportunity to rename the document after uploading it to the tool. In the case the file format is not \gls{PDF}, the file, which represents the document, is converted to \gls{PDF}. The tool do not support Open Office Formats, but several images formats and Microsoft formats.
+
+\subsection{Sharing of Documents}
+To invite other persons to sign a document or add them to receive a copy of the completed file, the user only need their name and the mail address of them. This information will be added to the declared fields and then their task need to be defined. The tasks are the following: Needs to sign, needs to confirm and gets a copy.
+
+\subsection{Select Order of Signing}
+Within the sharing step it is possible to define an order of who had to sign when. Therefore, it is important to mention, that the user can be ordered in steps. This means, multiple persons can sign in one order step, e.g. there are three persons, who had to sign, A, B and C. A and B work in the same company and both need to sign the document, before it is available for C, but it is not necessary that A needs to sign before B or vice versa. In this situation the initiator can add A and B in one signing step and C into step behind. This could be done by typing the order position in or drag and drop the signers in the position. 
+
+\subsection{Preparation for Signing}
+To prepare a document for signing, the user need to set the fields manual to the place he wants to have it. This can be done per person need to sign or the association is set after placing the field. Another thing that can be done is the declaration of settings, for example is the field required, adding a description or what types of signature is allowed.
+
+The fields types are separated in the categories need-to-be-filled-by-person and will-be-filled-by-tool. To the first category belongs the fields: text, signature, radio button, check box, list, combo box and attachments. In the second category are mail, initials, fore-, sure- and complete name and date.
+
+\subsection{Company Stamp}
+A company stamp is not available in the tool. In the case it is really required, it could be an option to choose the attachment field.
+ 
+\subsection{Signing Documents}
+eSignAnyWhere allows several electronic signature types. These are they:
+\begin{itemize}
+	\item Confirm signature: The person need to click on the signature field, the tool fills information like name, date and mail in and the person accept this as signature.
+	\item Draw signature: The person draw the signature with the mouse, the touchpad or any other device that could capture the signature and this will be added to the document.
+	\item Type name: The signer types his name in the declared field and the tool generates the signature out of it. Afterwards the person can select the style of the signature and the size of it.
+	\item Local certificate: Upload a certificate for signing.
+	\item Digital distance signature: Usage of a remote certificate to sign.
+\end{itemize}
+
+\subsubsection{One Person}
+All persons need to sign will receive a mail with the request to sign the document. In the case the person has already an account, it will be also mentioned to him in the tool. In both cases the user click on the button to get the document to sign. In the case there is a deceleration of consent, he need to accept this and can fill in the associated fields. Then he can create a signature as described above or, if he has an account, use the stored signature. When all required fields are filled in, the signer finalize the signing by clicking a button. Finally, a window is opened, where the person can download the current version of the document with or without the audit trail, a file where all actions regarding the documents are documented. 
+
+\subsubsection{Multiple Persons}
+In the case multiple persons are assigned to sign a document, they all receive a mail or notification based on the order defined. It is not possible, that two or more person can access the document at the same time. The signing process is for each person the same as for one person. But it need to be said, that the notification is not always good synchronized and during the test it happened that the test clients do not receive any mail and need to be remained.
+
+\subsubsection{Unregistered Person}
+For an unregistered person it is as simple as for a person with account to sign documents. They receive a link to the documents and can sign as explained above. 
+
+\subsubsection{Decline Signing}
+It is possible to allow the other involved signer to decline the signature. Therefore, this option need to be enabled in the settings of the process creator. Before the signer can sign the document a window appears where he can select to decline the signature. Next he need to give a reason why he declined the contract and all people involved receives the information of the declining.
+
+\subsubsection{Features}
+The tool offers some features not requested by the test scenario. They will be explained below.
+
+\paragraph{Delegation of Signing}
+It is possible for the signer to delegate the signing. It is possible to do it in the same window as in declining the signature. The person, using this option, need to add the name and the mail address of the new signer and he will be added to receive a copy.
+
+\paragraph{Contact Management}
+Inside eSignAnyWhere the contacts are store, which already received at least one invitation for signing. The user can add new contacts, edit existing or delete them.
+
+\paragraph{Deceleration of Consent}
+The user can define an own deceleration of consent. This need to be done in the settings. It need to be agreed every time a person signs a document created by the person with these settings.
+
+\paragraph{Security}
+The developer of the tool implemented some additional security levels. The initiator can set them by adding the signers. The verification will be done either about a pin, which is entered by the initiator and transmitted to the signer, or an \gls{sms} with a code, based on the phone number, that is verified or about Windows live.
+
+\subsection{Status Report}
+Several options are possible to receive a status report from a document:
+\begin{enumerate}
+	\item Dash Board: When the user open the website and logs in, a summary is presented with tasks to do and the amount of documents in the different states.
+	\item Mail: In the settings it is possible to set the option to track the actions done on a document with mail notifications.
+	\item Separate view: Inside the web application a separate view exists for documents. There they are sorted based on their status and the date send. Here the user also can do a filtering for specific criteria or names. Moreover, the status is presented through icons.
+\end{enumerate}
+
+\subsection{Availability of Document}
+There are several methods to get the document for persons having an account at eSignAnyWhere:
+\begin{itemize}
+	\item Portal: The users can download the document from the web application at the view for documents. There they also can see the audit-trail, which shows the actions done with the document.
+	\item Backup: Inside the settings the user can download all documents associated to the user as backup.
+	\item Mail: All persons involved or notified by the document signing receives a mail when the document is completely signed. Inside the mail is a link to the document. It could be downloaded from there. The link is only three months after completion active.  
+\end{itemize}
+For persons without an account, only the mail method is available.
+
+\subsection{Personal Impression}
+In general the web application is intuitive to use and has a lot of functionalities for a company like \gls{cc}, but the \glspl{app} are confusing for testing, because there are several available and there exists no description which to use when. Furthermore, problems with the mail invitation occurred during testing. It happened that mails had a long delay or are not sent and need to be resent. Once it was the issue that there was no content in the mail displayed, so that the user could not sign the document. But there is a good user guide available.

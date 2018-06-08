@@ -1,0 +1,49 @@
+\begin{minipage}{\textwidth}
+	Existing datasets:
+	\begin{itemize}
+		\item $ A = set of positions at the company $
+		\item $ B = set of document types at the company$
+		\item $ C = \{(c_1, c_2) | c_1,c_2 \in \!R_0^+, c_1 < c_2 \}$ // set of different value ranges for documents
+		\item $ D = \{(a_1, ... , a_n) | a_i \in A \}$ // set of different signing groups
+		\item $ E = \{ (b, (c_1,c_2), (d_1, ... , d_n)) | b \in B, (c_1,c_2) \in C, (d_1, ..., d_n) \in D \}$ // set with signing rules containing document specification, value range specification and signing group
+	\end{itemize}
+	
+	Function:
+	\begin{algorithmic}
+		\Function{f}{x,y,z} with the following conditions: $ x \in B \land z \in A \land y \in \!R_0^+$
+		
+		\If {$ \exists b \in B, b = x \land \exists a \in A, a = z $}
+			%\State $ docs \gets \forall (x, (c_1, c_2), (d_1, ... , d_n)) \in E $
+			\State $ docs = \{ (c_1,c_2) | (b, (c_1, c_2), (d_1, ... , d_n)) \in E, b = x \}$
+			\State $i,j$
+			\ForAll{$ (c_1, c_2) \in docs $}
+				\If{$ c_1 \leq y \leq c_2 $}
+					\State $ i \gets c_1$
+					\State $ j \gets c_2$									
+				\EndIf
+			\EndFor
+			
+			%\State $ groups \gets \forall (x, (i,j), (d_1, ... , d_n) \in docs $
+			\State $ groups = \{ (d_1, ... , d_n) | (b, (c_1, c_2), (d_1, ... , d_n)) \in E, b = x, c_1 = i, c_2 = j \}$
+			\State $ inGroup[|groups|]$
+			\ForAll{$ (d_1, ... , d_n) \in groups $}
+				\If{$ y \in (d_1, ... , d_n) $}
+					\State $inGroup [|(d_1, ... , d_n)|] = (d_1, ... , d_n)$
+				\EndIf
+			\EndFor
+			\If{$|inGroups| > 0 $}
+				\For{$k \gets 0, |inGroups|$}
+					\If{$inGroups[k] \notin \emptyset$}
+						\State \Return $inGroups[k]$
+					\EndIf
+				\EndFor
+			\Else
+				\State \Return error: no group for position and value found
+			\EndIf			
+		\Else
+			\State \Return error: position/document type does not exists
+		\EndIf
+		
+		\EndFunction
+	\end{algorithmic}
+\end{minipage}

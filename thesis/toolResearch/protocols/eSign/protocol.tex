@@ -1,0 +1,94 @@
+\section{Test Protocol eSign live}
+\label{sec:esign}
+The tool is tested based on the scenario described in the research tools to sign documents electronically. It is done at the 16th April 2018. Furthermore, the \gls{app} for Android is tested.
+
+\subsection{Registration}
+To register for  the test version the user need to enter the following data: name, mail, password, company name, company are, phone number and country. In the case a person is already registered he can log in with the mail and the password.
+
+\subsection{Uploading Documents}
+The systems (\gls{app} and web) allow different document usage:
+\begin{itemize}
+	\item Web application:
+	\begin{enumerate}
+		\item Template: Inside the tool the user can create templates for standard documents like Non-Disclosures Agreement. They could be used as much the user want.
+		\item Finished document from computer: Therefore, the user clicks on a button and a file chooser pops up, where the user navigates to the storage of the document file and select it.
+	\end{enumerate}
+	\item \Gls{app}:
+	\begin{enumerate}
+		\item Choose an existing document file from device: Therefore, the user clicks on a button and a file chooser pops up, where the user navigates to the storage of the document file and select it.
+		\item Select from another \gls{app}: The user can select documents file stored in another storage \gls{app}. Inside this the user can navigate as given from the \gls{app}.
+		\item Make an image of the document: The \gls{app} offers the option to make a photo from the document need to sign.
+		\item Template: Inside the tool the user can create templates for standard documents like Non-Disclosures Agreement. They could be used as much the user want.
+	\end{enumerate}
+\end{itemize}
+
+\subsection{Sharing of Documents}
+To share a document for signing, notification or forwarding just the mail address and the name of the persons should receive the document need to be entered.
+
+\subsection{Select Order of Signing}
+In the case there should be an order to sign, this option need to be enabled within the view to add signers and persons that need to be notified. Afterwards, the user can set the order either by adding them based on the order or by drag and drop the different parties.
+
+\subsection{Preparation for Signing}
+Before a document could be sent to sign, the required fields need to be set via a drag and drop functionality. The fields can be chosen per person who had to fill the field or can be selected in the option of the field. Additionally, each field beside the signature field can be set either as required or as not required.
+
+The following field types are available at eSign Live: signature, initials, date, name, title, company, text field, text area, check box, radio, list and label field.
+
+\subsection{Company Stamp}
+The tool does not provide the possibility to add a company stamp directly. It can be done with the attachment of documents, where the description explains that a company stamp is required and set this to required.
+
+\subsection{Signing Documents}
+eSign Live offers two options to sign a document:
+\begin{itemize}
+	\item Click-to-sign: The signer clicks on a button and confirm the agreement to accept this as a signature.
+	\item  Capture signature: The signer draw his signature with the mouse or other device in  the area given from the tool to draw. Afterwards, he confirms that he accepts this as signature.
+\end{itemize}
+
+\subsubsection{One Person}
+In the case the person has an account he will be notified by the tool on the web application or the \gls{app} and with a mail. In the case he goes with the mail, the user clicks on a link and will be forwarded to the document. Otherwise, he can access the document directly by clicking on it. First of all he need to accept the disclosures, this step is not done if the signer is equal to the initiator of the signing process. Next the user clicks on the fields that need to be filled manual, if they are not required he is not indebted to fill them. Afterwards, he generates the signature as described above and finish the signing process for him.
+
+\subsubsection{Multiple Persons}
+For each person it is equal to one person. There are two more aspects, that need to mentioned here. The first one is that the signers will be notified to be signed after the previous signer has signed if there exists an order for the signing. The second aspects is that the document can only accessed by one person per time. That means if two persons want to sign the document at the same time, it is not possible, because the tool will one of them deny the access until the other has closed the document or finished his signing process.
+
+\subsubsection{Unregistered Person}
+In the case the signer is not registered at eSign Live he will only receive a mail with a link. By clicking this link the signer will be redirected to the document and can sign as described for one person.
+
+\subsubsection{Decline Signing}
+The declining of the signature is not offered by eSign Live. It could only be done by do not signing the document and in the case there is end data for signing it will be marked as not agreed.
+
+\subsubsection{Features}
+eSign Live offers more actions than requested in the test scenario. They will be described below.
+
+\paragraph{In-person signing}
+The tool offers the possibility to let sign the signers on the device of the initiator of the process. This option need to be set by the preparation process for sharing the document. Once the finalization of the document preparation the initiator receives a link to let the other person(s) sign. There is a delegation through the signing process. Afterwards, the signer receives a mail with the signed document.
+
+\paragraph{Review before completion}
+Another feature is the option the review a document after all signer signed it. With this option the users have the possibility to check if everything is inserted correctly or proof that another persons notify the completed document. 
+
+\paragraph{Authentication}
+There are several options to prove the authenticity of the signers:
+\begin{itemize}
+	\item \gls{sms} with PIN code: The initiator and the signer need to type a phone number and to this number a \gls{sms} is sent with an access code. Only when the access code is typed correctly in, the signer has access to the document.
+	\item Question and Answers: The initiator selects one to two questions with answers and needs to inform the signer about the answers. The signer can only sign the document if he can answer the questions. The answers need to be equal to the typed one of the initiator.
+	\item Knowledge-Based Authentication: This authentication method is only available in \gls{usa} and Canada. The signer need to answer questions based on a personal credit report.
+\end{itemize}
+
+\paragraph{Attachments}
+Moreover, it is possible to add additional files to the document by the signer. Therefore, the option need to be set in the preparation. To activate this option the name and the description of the attachment is required, so that the signers know what to enter. Every attachment is assigned to one signer.
+
+\paragraph{Disclosures}
+eSign Live offers the feature to customize the disclosures. Inside additional legal aspects could be mentioned. This disclosure need to be agreed from the signer before he can sign the document. It is possible to set it at the end of signing process. 
+
+\paragraph{Accept only}
+Another feature is the option to let the document be accepted by another person. This is different to the signing. The user need to click on a button at the end of the document and there will be no signature done.
+
+\paragraph{Delegate signing} 
+The last feature is the delegation of the signature. This need to be enabled per signer. In the case the person, who is assigned to sign, is not allowed to sign, he can delegate it to another person. Therefore, he needs to click on a button on the top of the document view, which is not good visible (The button does not appear when the option is disabled.) Then the name and the mail of the new signer need o be inserted and if wanted additional authentication methods. Finally, the new signer receives an invitation to sign and the old signer will be added to the list of the persons, which receives the completed document as notification.
+
+\subsection{Status Report}
+eSign Live present the status of documents at several places. In the start view of the web application and \gls{app} a general summary is given. A detailed report is presented in a separate view, where the documents could be sorted based on the status or the time they were created.
+
+\subsection{Availability of Document}
+For users with and without an account the completed documents are available via a link that they receive with a mail or download them after they signed it. The persons having an account do have the possibility to reach them about the web application or the \gls{app} about the document view, where also the status is presented.
+
+\subsection{Personal Impression}
+The tool offers the most functionalities requested from \gls{cc}. Missing is the company stamp and the declining of signing. It is really comfortable that the web application and the \gls{app} looks very similar and can be used without many differences.

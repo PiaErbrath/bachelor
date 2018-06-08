@@ -1,0 +1,86 @@
+\section{Comparison} \label{sec:compT}
+This section will compare the result of the research. Therefore, a calculation of the costs ranges with the average and the limits, a summary is done and afterwards the comparison.
+
+First of all the calculation for the costs criteria is done. The average is the sum of all prices for one document divided by the number of tools taken into account. In the case there is no price information given, the tool is ignored for the calculation. All number are rounded up to two decimals behind the comma.
+\begin{center}
+	\fbox{
+		\parbox[centering]{10cm}{$\sum$ = 15,88 + 4,93 + 7,92 + 7,63 + 1,25 + 0,83 = 38,44 \newline
+		$\varnothing = \sum / \# tools$ = 38,44/6 = 6,41	}
+	}
+\end{center}
+
+This leads to the following limits, given in table \ref{tab:limitscosts}:
+\begin{table}[h!]
+	\begin{tabular}{|c|c|c|c|c|} \hline
+		Limit & -50\% & -25\% & $ \varnothing$ & +25\% \\ \hline
+		Value & 3,21 & 4,81 & 6,41 & 8,02 \\ \hline
+	\end{tabular}
+	\centering
+	\caption{Limits value for cost comparison}
+	\label{tab:limitscosts}
+\end{table}
+
+Based on the criteria defined in section \ref{sec:criteria} and the calculation did above, the different tools are summarized with the regarding weight. That is done in Table \ref{tab:summary}. In the case there is no information available a ''/'' is used to visualize it.
+
+%\begin{table}[h!]
+	\begin{longtable}{|c|c|c|c|c|c|c|c|c|c|} \hline
+		Criterion & \multicolumn{9}{c}{Tool} \\
+				& \rotatebox{90}{Wacom} & \rotatebox{90}{DocuSign} & \rotatebox{90}{HelloSign} & \rotatebox{90}{SignDoc} & \rotatebox{90}{Adobe Sign} & \rotatebox{90}{SignNow} & \rotatebox{90}{eSign Live} & \rotatebox{90}{PandaDoc} & \rotatebox{90}{eSignAnyWhere} \\ \hline
+		Integration & - - & + + & + + & + & + + & + + & + & + + & + \\ \hline
+		Device Independent & - - & + + & + + & - - & + + & + + & + + & + + & + + \\ \hline
+		Usability & / & + & o &  / & o & o & o & o & + \\ \hline
+		Costs & / & + & - & / & / & + + & - & - - & + + \\ \hline
+		Accepted file formats & / &  + & + + & / & + & + + & + + & + & + \\ \hline
+		Operating mode & / & + + & + + & o & + + & + + & + + & + + & + + \\ \hline
+		Additional security & / & + + & + & / & + + & + & + & - - & + + \\ \hline
+		Legal aspects & / & + + & + + & / & / & + + & + + & + + & + + \\ \hline 
+%	\centering
+	\caption{Summary of tools based on criteria}
+	\label{tab:summary}
+	\end{longtable}
+%	\centering
+%	\caption{Summary of electronic signature types based on criteria}
+%	\label{tab:summary}
+%%\end{table}
+
+To make a better comparison of the different \gls{es} types, a translation from weighting to points is done in table \ref{Tab:Translation} which is used in a later calculation.
+
+\begin{table}[h!]
+	\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+		Weight & / & - - & - & o & + & + + \\ \hline
+		Points & -10 & -2 & -1 & 0 & 1 & 2 \\ \hline
+	\end{tabular}
+	\centering
+	\caption{Translation of weights in points}
+	\label{Tab:Translation}
+\end{table}
+
+To get a complete image of the result the translated weights are multiplied with the importance of the criterion. To make it visible:
+\begin{center}
+	\fbox{
+		\parbox[centering]{9cm}{\textit{Sum = Importance of Criterion * Points of Weight}}
+	}
+\end{center}
+The result of that calculation is presented in table \ref{Tab:comp}. If a tool has more than one ''/'', it is ignored, due to the 
+
+%\begin{table}[h!]
+	\begin{longtable}{|c|c|c|c|c|c|c|} \hline
+		Criterion & \multicolumn{6}{c}{Tool} \\
+		 & \rotatebox{90}{DocuSign} & \rotatebox{90}{HelloSign} & \rotatebox{90}{SignNow} & \rotatebox{90}{eSign Live} & \rotatebox{90}{PandaDoc} & \rotatebox{90}{eSignAnyWhere} \\ \hline
+		Integration 	      & 16 & 16 & 16 & 8  & 16  & 8 \\ \hline
+		Device Independent    & 14 & 14 & 14 & 14 & 14  & 14 \\ \hline
+		Usability 		   	  & 6  & 0  & 0  & 0  & 0   & 6 \\ \hline
+		Costs 			   	  & 5  & -5 & 10 & -5 & -10 & 10 \\ \hline
+		Accepted file formats & 4  & 8  & 8  & 8  & 4   & 4 \\ \hline
+		Operating mode 		  & 6  & 6  & 6  & 6  & 6   & 6 \\ \hline
+		Additional security   & 4  & 2  & 2  & 2  & -8  & 4 \\ \hline
+		Legal aspects         & 2  & 2  & 2  & 2  & 2   & 4 \\ \hline 
+		Total Sum             & 57 & 43 & 58 & 35 & 24  & 56 \\ \hline
+%	\centering
+	\caption{Comparison of tools}
+	\label{Tab:comp}
+	\end{longtable}
+%	\centering
+%	\caption{Comparison of electronic signature types}
+%	\label{Tab:comp}
+%\end{table}

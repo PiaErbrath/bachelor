@@ -1,10 +1,6 @@
 \input{./include/include}
-\usepackage{sebithesistitle}
-\usepackage{rotate}
-\usepackage[toc,page]{appendix}
-\usepackage{eurosym}
-\usepackage{color, colortbl}
-\definecolor{Gray}{gray}{0.9}
+
+\usepackage[pagewise,modulo]{lineno}
 
 \title{Introduction of a Contract Management Workflow \newline at codecentric AG}
 \subtitle{Bachelor Thesis - Interim Report}
@@ -57,6 +53,10 @@
 	\newpage
 	\pagenumbering{arabic}
 	\pagestyle{ownstyle}
+	
+	\linenumbers
+%	\modulolinenumbers[5]
+	
 	\chapter{Introduction}
 	\input{./intro/introduction}
 	
@@ -67,6 +67,7 @@
 	\input{./mgnt/management}
 	
 	\chapter{Analysis of the Current State}
+	\label{ch:analysis}
 	\input{./analysis/currentState}
 	
 	\chapter{Requirements for the New Process}
@@ -83,9 +84,17 @@
 	\label{bpmnOld}
 	\input{./appendix/pbmnOld/bpmnCurrent}
 	
-	\chapter{Research about electronic Signature}
+	\chapter{Research about Electronic Signature}
 	\label{res:es}
 	\input{./electronicSignatureResearch/electronicSignatureResearch}
+	
+	\chapter{Research about Signing Tool}
+	\label{res:tool}
+	\input{./toolResearch/toolResearch}
+	
+	\chapter{Mathematical code representation}
+	\label{mathCode}
+	\input{./appendix/mathCode/mathCode}
 	
 %	\chapter{Risk Register}
 %	\input{./appendix/riskRegister/risks}

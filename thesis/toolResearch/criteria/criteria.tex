@@ -1,0 +1,78 @@
+\section{Criteria \& Weightings} \label{sec:criteria}
+Inside this section the different criteria are explained and divided in their
+weighted categories. The criteria are the following:
+\begin{itemize}
+	\item Usage also without license or payment possible: \newline
+	Importance: 9 \newline
+	In the case also the customer had to sign a document, it need to be possible he can do it electronically without having any license of the tool or need to pay for it.	
+	\item Devices independent and mobile access available: \newline
+	Importance: 8 \newline
+	Due to the fact that all employees of \gls{cc} have different \gls{os} for their computer and smart phones, which partly also have several hardware component, should be hardware independent. Furthermore, it is stated that the employees and execution board is not always at the buildings of the company available, doing home office or working by the customers. This leads the requirement of online availability of the tool, so that the employees of \gls{cc} can sign the documents every where they are.
+	\item Integration possible: \newline
+	Importance: 7 \newline
+	An other important criterion is the integration, because the tool should be interact with the \gls{erp} and the Google Suite used by \gls{cc}. In the best case all the tools should be used as once. This means they are in such a way integrated with each other, that the end user do not need to switch the applications.
+	\item Certified tool: \newline
+	Importance: 6 \newline
+	Because of legacy aspects the tool should be certified that it could be used in a certain geographical area. Additional interesting aspects that should be certified are security and used \gls{es}. This is important because \gls{cc} has different customers and some of them are in the business of insurance or finance and they request sometimes a defined standard of security and legacy of the signature.
+	\item Easy to use: \newline
+	Importance: 5 \newline
+	Due to the fact that several employees should use the tool, it need to simple to use. There should be no long learning time and the handling should be intuitive or at least should the tool provide information about buttons or next steps. In the best case the tool has a lot of automated processes, so that the user do not care about what to add where and which information.
+	\item Costs: \newline
+	Importance: 4 \newline
+	Regarding the size of the company it is to be expected that there will be costs to use the tool. But they should not be outside of the range, so that the usage-cost balance is distributed.
+	\item Accepted Documents: \newline
+	Importance: 3 \newline
+	\Gls{cc} uses in general standard document types. It should with the tool possible to use them in the future with the tool to sign the finished documents.
+	\item How many accounts/users possible: \newline
+	Importance: 2 \newline
+	The signing guideline from \gls{cc} allows the most employees to sign documents. Therefore a certain amount of users/accounts per company need to be provided by the tool.
+\end{itemize}
+
+The table \ref{tab:resTcateg} displays the different categories for each criterion and shows
+their weighting. The best weighting is (+ +) and the worst is (- -).
+
+\begin{table}[h!]
+	\begin{tabular}{|p{4cm}|p{9cm}|p{1.5cm}|} \hline
+		Criterion & Category & Weighting \\ \hline
+		\multirow{4}{*}{Usage without license} & No & - - \\ \cline{2-3}
+														& License for uploading \& download files, rest is free & - \\ \cline{2-3}
+														& License for uploading, rest is free & o \\ \cline{2-3}
+														& Everything without license & ++ \\ \hline
+		\multirow{7}{*}{Devices independent} & Additional hardware required & - - \\ \cline{2-3}
+											 & Only certain \gls{os} for Desktop & - - \\ \cline{2-3}
+											 & Only certain \gls{os} for smart phone & - - \\ \cline{2-3} 
+											 & Only Desktop & - \\ \cline{2-3}
+											 & Only smart phone & o \\ \cline{2-3}
+											 & Only programmed devices & o \\ \cline{2-3}
+											 & Independent & + + \\ \hline
+		\multirow{5}{*}{Integration possible} & No & - - \\ \cline{2-3}
+												& Only \gls{api} & o\\ \cline{2-3}
+												& \Gls{sdk} & + \\ \cline{2-3}
+												& Tools for workflow building & + + \\ \cline{2-3}
+												& Google suite \& new \gls{erp} & + + \\ \hline
+		\multirow{4}{*}{Certified} & No & - - \\ \cline{2-3}
+									& Germany only & o \\ \cline{2-3}
+									& \Gls{eu} only & + \\ \cline{2-3}
+									& Worldwide & + + \\ \hline
+		\multirow{4}{*}{Easy usage} & A lot of actions to set required fields \& activate sharing & - - \\ \cline{2-3}
+									& A few actions to set required fields \& activate sharing & o \\ \cline{2-3}
+									& A few actions to set required fields \& activate sharing \& company stamp can be recorded & + \\ \cline{2-3}
+									& Recognize where to set fields \& company stamp can be recorded & + + \\ \hline
+		\multirow{5}{*}{Costs} & Every document & - - \\ \cline{2-3}
+								& Each active user & - - \\ \cline{2-3}
+								& One license per company $>$ 5000 \euro & - \\ \cline{2-3}
+								& One license per company $\leqslant$ 5000 \euro & + \\ \cline{2-3}
+								& Nothing & + + \\ \hline
+		\multirow{4}{*}{Accepted documents} & Special type & - - \\ \cline{2-3}
+											& \Gls{pdf} & o \\ \cline{2-3}
+											& \Gls{pdf} \& Microsoft Word & + \\ \cline{2-3}
+											& \Gls{pdf}, Microsoft Word \& Open Office Writer & + + \\ \hline
+		\multirow{3}{*}{Amount of accounts} & $<$ 50 & - \\ \cline{2-3}
+											& 50 $\geq$ 100 & o \\ \cline{2-3}
+											& Unlimited & + + \\ \hline
+
+	\end{tabular}
+	\caption{Categories and their weighings}
+	\label{tab:resTcateg}
+\end{table}
+\newpage

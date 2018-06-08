@@ -1,0 +1,86 @@
+\section{Test Protocol PandaDoc}
+\label{sec:pandadoc}
+
+This is the test protocol for the tool PandaDoc. Tested is the business plan, which is free for fourteen days. The date of the test is the 18th April 2018. For PandaDoc an \gls{app} is available, but it always crashes by starting it on Android. Therefore, it is not tested. In general need to be said, that the tool has more functionalities than only signing of documents. It is also possible to create documents with it.
+
+\subsection{Registration}
+The registration is simple for the test version. Just enter the name, mail and a password. The next step is to add the job level and role of the tester, the company and the phone number. Finally, a mail verification is done.
+
+\subsection{Uploading Documents}
+There a three possibilities to select a document for signing. The first one is to create the document directly in PandaDoc with predefined text blocks and fields that need to be filled with content. The second option is the choosing of a template, either an own or a global one, where only a few texts and data aspects need to be fitted to the current purpose. The last choice could be the uploading of a document from the computer, phone or Google Drive account. Therefore, a document chooser is opened and the user can navigate to place where the document to be signed is placed.
+
+\subsection{Sharing of Documents}
+To share a document for signing is simple. The initiator of the process need to know the name and the mail address of the other persons, add them to sign and it is done. The assigned persons receive a mail where they can access the document.
+
+\subsection{Select Order of Signing}
+PandaDoc offers the option to set up a signing order. Therefore, the user need to enable the option and has several possibilities: He enters the signer in the order he wants (in the case there was no one added before), accepts the order from the entering or drag and drop the order in the view for the ordering.
+
+\subsection{Preparation for Signing}
+The preparation for the signing is less manual work, which is not always intuitive. The field are positioned with a drag and drop functionality in the document representation. Then the user need to decide if the field is required and who had to fill it with data of the signer.
+
+The fields type are: signature (to sign), initials (representing the initials of the name from the signer), date of signing, checkbox (if is agreed to a point), drop-down menu to select one from given options, a masked field to fill in hidden information, an upload field for adding attachments like images and finally a text field is available, where the signer can enter a free text.
+
+\subsection{Company Stamp}
+In PandaDoc there is no field for a company stamp provided. In the case it is really required, the upload field could be used, but this not a perfect solution, because there is no image representation in the document after adding the image of the stamp to it.
+
+\subsection{Signing Documents}
+To sign a document first a signature need to be created. Therefore, exist three options if they are not disabled by the signer. They are:
+\begin{enumerate}
+	\item Draw: The signer draw with the mouse or the finger on the touchpad/display the signature and accepts it as his electronic signature.
+	\item Type: The signer types his name (only in the case the field is not already filled and it is incorrect), select a writing style and color and finally accepts the signature as his electronic signature.
+	\item Upload: The signer upload a picture of his signature or any other image (it is not checked) and accepts this as his electronic signature.
+\end{enumerate}
+All fields marked by the initiator as required  need to be filled, but the tools leads the signer through this process.
+
+\subsubsection{One Person}
+The only difference in one person signing is when the only signer is the initiator of the signing. He can directly fill in the required fields at and after the creation in the tool. Additionally, he receives a mail with the request to sign. In the case he does not have a signature already, he can create one described above.
+
+For other users it is a bit different. They receive an invitation to sign within a mail, where they can click on the button or link. Then the document will be opened, and they can enter the requested data and create a signature. If they have an account at PandaDoc already they can access the document also from the tool, but only in the case the request is associated to the same mail as they are registered in PandaDoc. 
+
+\subsubsection{Multiple Persons}
+If multiple persons need to sign a document, they can do it as described for each person. The only exception is that they can not do it in parallel. They also receive the mail with the invitation at the same time. This only in the case difference, when an order is declared. Then they receive the invitation soonest if the person before them have signed the document.
+
+\subsubsection{Unregistered Person}
+An person, which is not registered at PandaDoc do not need to create an account to sign documents. He only generates each time a new signature and accepts it. For him is the document always available about a link, send after the document is completely signed.  
+
+\subsubsection{Decline Signing}
+PandaDoc does not offer the decline of signing direct. The only possibility is to wait until the deadline of the signing is expired.
+
+\subsubsection{Features}
+The tool offers different additional features, which are not requested by the test scenario.
+
+\paragraph{Document Forwarding}
+One simple feature is that the process initiator can enable the option for one or multiple signer to share the document. In the document presentation for the persons having this option an additional button is added. By clicking this button the user can enter the mail address and name of the person(s) ha want to share the document. When the document is completely signed, the person(s) receive also a mail with the link to the final document presentation. 
+
+\paragraph{Signature Forwarding}
+Another feature is the possibility to delegate the signature. But therefore, the previous explained feature need to be enabled and the signature forwarding need to be enabled in the same view. The user, using this possibility, makes the same as the feature above and enables in the same view the right the sign for him. The new invited person receives a mail with the request to sign the document.
+
+\paragraph{Branding}
+PandaDoc offers the option in the business plan to add the company layout to the mails, instead of it from the tool. Therefore, some changes in the settings need to be done. 
+
+\paragraph{Creation of Documents}
+Moreover, the functionality exists to create documents. This done via drag-and-drop from layout components like header, text boxes or lists. They could be filled with the typing the content or choosing from stored data (for example from the product catalog).
+
+\paragraph{Contact Management}
+The tool offers the service of a contact management. All contacts required for the signing could be added, edit or removed. For each contact the name and mail is required. Additional information could be the company name. It is available, because PandaDoc could be migrated with tools for costumer relation management.
+
+\paragraph{Product Catalog}
+Inside the tool a functionality exists to work with a product catalog of the company. All products of the company can be maintained. That comes with the relation to the customer relation management.
+
+\subsection{Status Report}
+To see the status of a document the user has three options:
+\begin{enumerate}
+	\item Dashboard: In the start view a summary of all documents based on their status is presented. Moreover, the last created/added documents are displayed.
+	\item Document view: In this view all documents are visualized with a color based on their status. The user also can see/sort the documents based on status and name. Furthermore, the information is displayed, which user did what.
+	\item Mail notification: Inside the settings the user can set mail notifications for each action and status of the document, he will receive every time a mail when something changed.
+\end{enumerate}
+
+\subsection{Availability of Document}
+After the document is completed, it is accessible via different ways:
+\begin{itemize}
+	\item Application: Only users with an account at PandaDoc have the option to access the document about the tool. Therefore, they only need to go to a view where the documents are displayed. 
+	\item Link \& Mail: All persons, linked to the document to sign or get notifications about the document, receive a mail with a link to it, but only in the case it is completed. Via the link it can be accessed as long it is not deleted from the system.
+\end{itemize} 
+
+\subsection{Personal Impression}
+PandaDoc offers the basic functionalities required from \gls{cc} and more, but it is not always intuitive to work with it. It is often difficult to keep the overview due all the functionalities. The problem is that for further development of the process of the contract management system the creation of documents  will be part, because the tool offers already this part.

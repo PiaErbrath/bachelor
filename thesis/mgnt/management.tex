@@ -16,15 +16,14 @@ The project implementation will be done in an agile way, that means for the impl
 		\multirow{2}{*}{1} & 1-4 & Project planning, Topic introduction & 5-9 \\
 		& 4 & Research \gls{es} & 9 \\	\hline	
 		Milestone I & 06/03/2018 & Project Plan & 10\\ \hline
-		1 & 5,6 & Analysis current state \& requirements & 10-11  \\ \hline
-		2 & 7 & Research tools & 12 \\ \hline
+		2 & 5,6 & Analysis current state \& requirements & 10-11  \\ \hline
+		3 & 7 & Research tools & 12 \\ \hline
 		Milestone II & 27/03/2018 & Midterm report & 13\\ \hline
-		2 & 9 & Research tools & 13 \\ \hline
+		3 & 9 & Research tools & 13 \\ \hline
 		Milestone III & 05/04/2018 & Midterm presentation & 14 \\ \hline
-		\multirow{2}{*}{3} & 10,11 & Designing new workflow & 14-15 \\
-		& 12 & Testing design & 16 \\ \hline
-		\multirow{2}{*}{4} & 13-17 & Implementing worflow & 17-21 \\
-		& 18 & Testing workflow & 22 \\ \hline
+		4 & 10,11 & Designing new workflow & 14-15 \\
+		\multirow{2}{*}{4} & 12-17 & Implementing system & 17-21 \\
+		& 18 & Testing system & 22 \\ \hline
 		5 & 19 & Final preparation of report \& presentation & 23 \\ \hline
 		Milestone IV & 12/06/2018 & Final Report & 24\\ \hline
 		Milestone V & ? & Final presentation & ? \\ \hline
@@ -41,19 +40,19 @@ The project consist out of three major deliverable categories that have differen
 	\item Diagrams: \newline
 	In the analysis and the design phase diagrams need to be created. First of all the used diagram types have defined standards, these standards must be fulfilled. Therefore, exists tools that can handle the checking. This will be used. Additional the logic will be checked by persons that currently work (or will work) in the processes visualized in the diagram. 
 	\item Implementation: \newline
-	For the implementation different use cases will be created, that need to be implemented. The checking will be that they can be executed without errors. Furthermore, if code is created, it will be done based on the defined standard of the used programming language and test driven.
+	For the implementation different use cases will be created, that need to be implemented. The checking will be that they can be executed without errors. Furthermore, if code is created, it will be done based on the defined standard of the used programming language and test driven. Moreover a definition of done will be created, that ensures the quality of the developed code.
 \end{enumerate}
 The created results will be regular presented and discussed with involved persons. That leads to the possibility to avoid big problems, cause of their early detection. The quality management is agreed with the company. 
 
 \section{Deliverables}
 At the end of the internship the following things need to be delivered:
 \begin{itemize}
-	\item Project Plan: ToDo
-	\item Visualization of the current process: ToDo
-	\item Research documents: ToDo
-	\item Design visualization from Proof-of-concept: ToDo
-	\item Documentation from Proof-of-concept: ToDo
-	\item Report of thesis: ToDo
+	\item Project Plan: Inside this document the first planning of the bachelor project is written down. The reason of the existence of this document, is to get an overview of the bachelor thesis project for all involved parties. The parties are listed at the information page.
+	\item Visualization of the current process: To get an overview about the current process of the sales department a visualization of their process is done with \gls{bpmn} diagrams. Based on them an analysis is done (see chapter \ref{ch:analysis}). The diagrams are placed in the appendix \ref{bpmnOld}.
+	\item Research documents: During the bachelor thesis two researches need to be done. The first one is about \gls{es}, which is placed in the appendix \ref{res:es}. It was done to get knowledge about \gls{es} and to clarify which \gls{es} is could be used at \gls{cc}. The other research is about tools, which implement the \gls{es} of documents and already and can be used for the system to be created during the bachelor thesis. The research document is in the appendix \ref{res:tool}.
+	\item Design visualization of the system: To get an understanding of the the created system and show the skills of the student the design several diagrams with \gls{uml} standards need to be created, like a class diagram or activity diagrams. The diagrams should present the structure of the implementation and the processes of the systems.
+	\item Documentation of the system: Another deliverable is the documentation of the system to be created. This includes user manual, administrator guide and developer documentation (source code, architecture description, etc.). They should give help to work with the later system in the case the student is not available anymore after finishing the project.
+	\item Report of thesis: To give an overview about all things done and decisions taken during the bachelor thesis project a document is to be created, which will be read through the examiners of the bachelor thesis. Moreover, the document will be later public available.   
 \end{itemize}
 
 \section{Risk Management}
@@ -68,7 +67,7 @@ Inside this section already find risks will be presented in the figure \ref{fig:
 				2 & Legals & Legals influence the requirement of a project and need to be fulfilled otherwise it could results in punishments & New laws from governance/ \gls{eu} & Collaboration a lawyer / person with knowledge about laws, Make research about laws regarding used technology & 2 & 7 & Open \\ \hline
 				3 & New technology / programming language / \gls{api} / \gls{SDK} / framework & The usage of new technology results	in unknown problems that could not be solved with that technology due to the fact that requirements could not be fulfilled & Not enough knowledge about 	the used technology & Good research about technology, usage of tools knowledge already exists in company, estimate more time & 3 & 3 & Open \\ \hline
 				4 & Communi- cation & Cause of the influence of many parties on the project, communication problems could occur, like meetings invitation, incorrect requirements, ... & Missing or incomplete communication & Research about all involved parties, keep them informed and make regular meetings & 3 & 3 & Open \\ \hline
-				5 & \gls{erp} & Currently the Backoffice/Finance/HR	want to switch to a new \gls{erp},
+				5 & \gls{erp} & Currently the Backoffice/Finance/\gls{hr} want to switch to a new \gls{erp},
 				but at the moment it is not clear which	one will be used. Some steps of	the new workflow depend on the \gls{erp}, so that the workflowcould not be implemented at the end	of the project. & Late decission, no possible to fit worklfow to the \gls{erp} & Communication, get information about the current state & 5 & 5 & Occurred \\ \hline
 			\end{tabular}
 			\caption{Risk Register}
