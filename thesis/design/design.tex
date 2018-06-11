@@ -1,0 +1,22 @@
+ToDo
+
+\section{General Design}
+- usage of mvc because of web application and logic split of backend and frontend
+- as variable as possible for ERp systems -> interface specify methods for system
+- as variable as possible for rule set storage -> interface because every company could have own preferences
+- as variable as possible for signing tool -> could be changed based on new requirements or company depending: interface
+- user management via interface, cause every company could already have existing and to reduce maintenance of data in several dbs 
+
+\section{Used Programming Language and Frameworks}
+- why used discussion
+- first idea js, but less expiriences not all tools have all functionalities inside Rest api
+- Java 8: in company widely used, a lot of experience, time constrains, most SDks available or REST API
+- Spring Boot: easy set up, has already a lot of functionalities like security log in, embedded dbs / server, get new experiences, server configurations
+- Maven: regulates the dependencies of project, can be build on every machine where maven and java is installed
+
+\section{Rule Set Request}
+Jede Unterschriftenrichtlinie besteht aus mehreren Elementen: Positionen, die Mitarbeiter einnehmen können und verschiedene Rechte haben; Dokumentenarten, die verschieden gehandhabt werden müssen bezüglich Unterschriften; Wertbereiche/Dokumentbeträge, die immer einen min und max haben; Unterschriftengruppen, die aus verschiedenen Unternehenspositionen bestehen und verschiedene kombinierte Rechte haben;
+
+Die Kombination aus den oben genannten Elementen definiert Regeln wann wer mit wem ein bestimmtes Dokument unterschreiben darf, welches ein weitere Datenmenge ist.
+
+Wenn jetzt jemand ein Dokument aussucht zum Unterschreiben, muss analysiert werden basierend auf der Dokumentenart, dem Betrag des Dokumentes und der Position des Users ob er das Dokument unterschreiben darf und wenn ja ob eine weitere Person mit einer anderen Position mit unterschreiben muss.

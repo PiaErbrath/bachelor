@@ -1,0 +1,42 @@
+Inside this chapter an overview about the two researches is given, which are made during the project. First of all the research about electronic signature is explained, where the author collected general information for the project. Next the second research about electronic signing tools is presented, which was the main research for the project. And finally the changed requirements are listed of the project.
+
+\section{Research about Electronic Signature}
+Inside the first weeks of the bachelor project the research about electronic signature was created. It is added in the appendix \ref{res:es}. This section will give a short overview about the scope, criteria, how it was executed and the result of it.
+
+\subsection{Approach}
+The aim of this research was to gain knowledge about \gls{es} in general. At the moment \gls{cc} uses the \gls{es}, but there was until now no clear status about the usage. Also, this should be clarified in the research. Included was aspects like legal situation in Germany and \gls{eu}. Moreover, the different types of \gls{es} should be analyzed and an advise should be given which one to use. Therefore, different questions were set up and criteria defined together with the employees of \gls{cc}. At the end an advice should be given if \gls{es} should be used at \gls{cc} and in the case the advice is positive, which \gls{es} type should be used.
+
+\subsection{Strategy}
+To fulfill the approach an internet research was done. It was found a lot of governance documents, papers from companies that provide tools for electronic signature and lawyer blog posts. The information are taken into account based on the date they were written down (some of them were outdated by newer legal changes) and believability of the author.
+
+
+\subsection{Result}
+Since the year 2014 exists an \gls{eu} wide regulation for \gls{es}, called \gls{eidas}, which need to be fulfilled at 1st July 2016 in all \gls{eu} member states and \gls{eea} \parencite{BundesministeriumInneren2018,Steffens2018eIDAS}. Also, in the most other countries in the world the \gls{es} is accepted. 
+
+Moreover, exist four different \gls{es} types:
+\begin{enumerate}
+	\item \Gls{ses}: The easiest \gls{es}, but also with the lowest provability. Can be the typing of the name at the end of a document or inserting an image with the signature \parencite{eIDAS2014,CEFd2018}.
+	\item \Gls{aes}: More complex \gls{es} type, which guarantee that no changes are made to the document after it is signed and identify the signer \parencite{eIDAS2014}.
+	\item \Gls{qes}: In general the same as \gls{aes}, but with provability and certification by governance instances. Mostly required additional hardware, but there are solutions on the market, which does that inside a cloud \parencite{eIDAS2014,CEFd2018} 
+	\item \Gls{bs}: This type is at the moment not detailed explained and accepted by governances. There are two sub categories with different approaches: static and dynamic. Both are good to identify the signer, but depending on the implementation it is not possible to detect document changes. Furthermore, additional hardware is mostly required.
+\end{enumerate}
+
+After all it would be advisable for \gls{cc} to use either the \gls{qes} or \gls{aes}, because both identifies the signer and detects document changes after signing. Their points have only one value difference. And regarding usability and costs factors, the \gls{aes} fits for the standards use cases at \gls{cc} the legal standards.
+
+\section{Research about Electronic Signing Tool}
+To introduce a new process for signing documents electronically there are two options: Either the electronic signature tool is created by the student or it is an already tool for electronic signature used. In relation to the requirements for electronic signature tools and their acceptance by the customers of \gls{cc}, it was not an opinion to develop by the students. The major reasons are the time constraints, the high approach that need to be fulfilled and the costs for the checking. Therefore, the decision was made to use an existing tool. This results in research for tools that can be used. The document is placed in the appendix \ref{res:tool}. 
+
+\subsection{Approach}
+Within the research a tool should be detected that fits best the requirements of \gls{cc}. They are influenced by financial and programmatic aspects. To figure them out questions are produced and needs of \gls{cc} are documented from the new process. Then a selection was made of tools and tested. At the end the tools are weighted and in the best case only one tool is advisable.   
+
+
+\subsection{Strategy}
+First of all the criteria were defined together with members of \gls{cc}. Based on that a selection is made of tools that are taken in to account. Therefore, partner of \gls{cc} were requested if they have a solution, suggestion from employees are collected and web comparison portals are used to identify potential candidates. Afterwards a scenario was created to test all of them if they are usable and simple to handle. In the case additional information are required they are either collected from the web sides of the provider or related blogs and within interviews with the sales departments of them. Inside the interviews mostly demos were given and an analysis of the required functionalities was made.  
+
+\subsection{Result}
+This research has nine potential candidates for the tool to be: Wacom technology for electronic biometric signature, DocuSign, HelloSign, SignDoc, AdobeSign, SignNow, eSign Live, PanadaDoc and eSignAnyWhere. Most of them has a similar functionality, only Wacom and SignDoc was not really testable, because of hardware problems and are not taken into account in the final comparison. Furthermore, AdobeSign is not in the final comparison, because of missing information despite repeated demand.
+
+At the end DocuSign, HelloSign and eSignAnyWhere are the tools with the most points and are closely ranged. HelloSign has the most points, followed by DocuSign and then eSignANyWhere. But it is advisable to use DocuSign, because there is a German-speaking support available, it has a higher security standard and all requested functionalities are available. However, it is a bit more expensive.  
+
+\section{Change of Requirements}
+During the time the research about electronic signing tools was created, the information comes that the current \gls{erp} will be replaced through a new \gls{erp} till the end of the year 2018. Therefore, a complete requirements engineering will be made and this started already during the second phase of the bachelor thesis. Moreover, the fact was given, that earliest at the end of the bachelor thesis it will be clear which new \gls{erp} is introduced at \gls{cc}. But due to the fact that the usage of the \gls{api} from the signing tool will cost money it was decided to do not buy such licenses. Moreover, there are no information available about the costs of the \gls{api} of the current \gls{erp} \textit{ScopeVisio}. Instead of creating a complete system, a prototype should be created with the developer \gls{api} from the tool \textit{DocuSign} as signing tool, but the system should be created in that it could be exchanged. The \gls{erp} should be simulated.

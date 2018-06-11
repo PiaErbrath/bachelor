@@ -3,7 +3,7 @@
 \usepackage[pagewise,modulo]{lineno}
 
 \title{Introduction of a Contract Management Workflow \newline at codecentric AG}
-\subtitle{Bachelor Thesis - Interim Report}
+\subtitle{Bachelor Thesis - Final Report}
 \author{Pia Erbrath}
 \def\place{Solingen}
 \date{\place, \today}
@@ -37,9 +37,9 @@
 	\pagestyle{plain}
 	\input{./include/informationpage}
 	\newpage
-	%\input{./abstract/abstract}
-	%\addcontentsline{toc}{chapter}{Abstract} 
-	%\newpage
+	\input{./abstract/abstract}
+	\addcontentsline{toc}{chapter}{Abstract} 
+	\newpage
 	\input{./include/statementofauthenticity}
 	\newpage
 	
@@ -54,8 +54,7 @@
 	\pagenumbering{arabic}
 	\pagestyle{ownstyle}
 	
-	\linenumbers
-%	\modulolinenumbers[5]
+	\linenumbers % ToDo replace before print
 	
 	\chapter{Introduction}
 	\input{./intro/introduction}
@@ -72,6 +71,15 @@
 	
 	\chapter{Requirements for the New Process}
 	\input{./requirements/requirementsNew}
+	
+	\chapter{Researches}
+	\input{./research/research}
+	
+	\chapter{Design}
+	\input{./design/design}
+	
+	\chapter{Implementation}
+	\input{./implementation/impl}
 	
 	\chapter{Conclusion}
 	\input{./conclusion/conclusion}
@@ -92,13 +100,8 @@
 	\label{res:tool}
 	\input{./toolResearch/toolResearch}
 	
-	\chapter{Mathematical code representation}
+	\chapter{Mathematical Code Representation Rule Set Request}
 	\label{mathCode}
-	\input{./appendix/mathCode/mathCode}
-	
-%	\chapter{Risk Register}
-%	\input{./appendix/riskRegister/risks}
-	
-	
+	\input{./appendix/mathCode/mathCode}	
 	
 \end{document}
