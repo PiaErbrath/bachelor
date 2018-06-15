@@ -1,0 +1,119 @@
+\section{Enterprise Resource System Connector}
+\begin{lstlisting}[language=Java]
+	public interface IErpConnector {
+	
+	/**
+	* The method search for all documents, which contains the searched text part in the name / associated customer name
+	* / employee name who upload the document and return the result.
+	* @param name part which should be search for
+	* @return a list with all found entries, in the case nothing is found an empty list will be returned
+	*/
+	public List<DocumentContainer> searchAll (String name);
+	
+	/**
+	* This method search for all documents related to a customer. In the case not the full name is entered, all documents
+	*  related to a customer name containing the searched part are returned.
+	* @param name customer name (or part of it), which is searched
+	* @return a list with all found entries, in the case nothing is found an empty list will be returned
+	*/
+	public List<DocumentContainer> searchByCustomer (String name);
+	
+	/**
+	* This method search for documents by their name.
+	* @param name or part of the name from the document
+	* @return a list with all found entries, in the case nothing is found an empty list will be returned
+	*/
+	public List<DocumentContainer> searchByDocumentName (String name);
+	
+	/**
+	* This method search for all documents having a certain document type.
+	* @param type of the searched document
+	* @return a list with all found entries, in the case nothing is found an empty list will be returned
+	*/
+	public List<DocumentContainer> searchByDocumentType (DocumentType type);
+	
+	/**
+	* This method search for all documents uploaded by a certain employee.
+	* @param name or part of the name from the employee
+	* @return a list with all found entries, in the case nothing is found an empty list will be returned
+	*/
+	public List<DocumentContainer> searchByEmployee (String name);
+	
+	/**
+	* This methods returns a document by its ID
+	* @param id of the document
+	* @return the document
+	*/
+	public Object getDocumentById (String id);
+	
+	/**
+	* This method returns a document by its name
+	* @param name of the document
+	* @return the document
+	*/
+	public Object getDocumentByName (String name);
+	
+	/**
+	* This method stores an already signed document by its unsigned version
+	* @param document which should be stored
+	* @return true, if was possible to store it, otherwise false
+	*/
+	public boolean storeSignedDocument (Object document);
+	
+	}
+\end{lstlisting}
+
+\section{User Reader}
+\begin{lstlisting}[language=Java]
+	public interface ICompanyMemberReader {
+	
+	/**
+	* This should return all members which belongs to a certain group of the company
+	* @param groupName name of the group, the members are requested from
+	* @return a List with the name of the members in the format firstName.surname, in the case the group does not exist an empty list
+	*/
+	List<String> getMembersOfGroup(String groupName);
+	
+	/**
+	* This method returns the mail address of a certain company member
+	* @param memeberName in the format firstName.surname
+	* @return the mail address if the member exist, otherwise an empty string
+	*/
+	String getMailOfMember(String memeberName);
+	
+	/**
+	* This method returns the phone number of a certain company member
+	* @param memberName in the format firstName.surname
+	* @return the phone number if the member exists, otherwise an empty string
+	*/
+	String getPhonenumberOfMember(String memberName);
+	
+	/**
+	* This method returns the name of the group, the member belongs to
+	* @param memberName in the format firstName.surname
+	* @return the group name if member is in a group, otherwise an empty string
+	*/
+	String getGroupOfMember(String memberName);
+	}
+\end{lstlisting}
+
+\section{Rules Reader}
+\begin{lstlisting}[language=Java]
+	public interface ISigningRulesReader {
+	
+	/**
+	* This method returns all company positions that can or need to sign along with the initiator of the signing process.
+	* @param docType the type of the document
+	* @param documentValue the value of the document
+	* @param personPosition the position of the person initiate the process
+	* @return a list of names of company positions that need to sign together with the initiator
+	* @throws Exception in the case the company position or document type does not exists. Furthermore, if there is no range available for that combination
+	*/
+	public List getSignigGroup(String docType, double documentValue, String personPosition) throws Exception;
+	}
+\end{lstlisting}
+
+\section{Signing Connector}
+\begin{lstlisting}[language=Java]
+
+\end{lstlisting}
