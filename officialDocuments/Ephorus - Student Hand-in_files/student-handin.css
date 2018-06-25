@@ -1,0 +1,63 @@
+body {
+	margin: 0;
+	font-family: Arial, serif;
+	font-size: 13px;
+	line-height: 1.3;
+	color: #505b64;
+	width: 450px;
+}
+
+.error {
+	color: red;
+}
+
+.validation-error {
+	background-color: #FFEEEE !important;
+}
+
+dl {
+	overflow: hidden;
+}
+
+dt {
+	float: left;
+	clear: left;
+	width: 150px;
+}
+
+dd {
+	float: left;
+	margin-left: 0;
+}
+
+input[type="text"],textarea {
+	width: 200px;
+	padding: 1px 3px;
+	font-size: 13px;
+	color: #505b64;
+	background-color: #fff;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	margin: 0 0 8px;
+}
+
+p {
+	width: 350px;
+}
+
+#btnSubmit {
+	float: right;
+	background-color: #ddd;
+	margin-right: 92px;
+	border: 1px;
+	color: #505b64;
+}
+
+a {
+	float: right;
+	text-decoration: none;
+}
+
+img {
+	border: 0 none;
+}

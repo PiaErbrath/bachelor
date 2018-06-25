@@ -2,6 +2,8 @@
 
 \usepackage[pagewise,modulo]{lineno}
 
+\usepackage{pdfpages}
+
 \title{Introduction of a Contract Management Workflow \newline at codecentric AG}
 \subtitle{Bachelor Thesis - Final Report}
 \author{Pia Erbrath}
@@ -9,7 +11,7 @@
 \date{\place, \today}
 
 % provide data for information page
-\def\documentname{Interim Report for Bachelor Thesis}
+\def\documentname{Final Report for Bachelor Thesis}
 \def\studentname{Pia Erbrath}
 \def\snumber{2300869}
 \def\course{Informatics - Software Engineering}
@@ -26,10 +28,12 @@
 \def\externalexpert{H. Schuren}
 \def\hasnda{no}
 
-\addbibresource{./include/references.bib}
+\setlength{\glsdescwidth}{0.8\textwidth}
 
-\makeglossaries
+\addbibresource{./include/references.bib}
 %\glossarystyle{list_auto}
+\makeglossaries
+
 
 \begin{document}
 	\maketitle
@@ -48,21 +52,24 @@
 	\listoftables
 	\addcontentsline{toc}{chapter}{\listfigurename}
 	\listoffigures
+	\addcontentsline{toc}{chapter}{Listings}
+	\lstlistoflistings
 	\newpage
 	\input{./glossary}
 	\newpage
 	\pagenumbering{arabic}
 	\pagestyle{ownstyle}
 	
-	\linenumbers % ToDo replace before print
-	
 	\chapter{Introduction}
+	\label{ch:introduction}
 	\input{./intro/introduction}
 	
 	\chapter{Assignment}
+	\label{ch:assignment}
 	\input{./assignment/assignment}
 	
 	\chapter{Project Management}
+	\label{ch:management}
 	\input{./mgnt/management}
 	
 	\chapter{Analysis of the Initial Situation}
@@ -70,25 +77,37 @@
 	\input{./analysis/currentState}
 	
 	\chapter{Requirements for the New Process}
+	\label{ch:requirements}
 	\input{./requirements/requirementsNew}
 	
 	\chapter{Researches}
+	\label{ch:research}
 	\input{./research/research}
 	
-	\chapter{Design}
+	\chapter{System Design}
+	\label{ch:design}
 	\input{./design/design}
 	
-	\chapter{Implementation}
+	\chapter{System Implementation}
+	\label{ch:implementation}
 	\input{./implementation/impl}
 	
+	\chapter{Recommendations}
+	\label{ch:advice}
+	\input{./advice/advice.tex}
+	
 	\chapter{Conclusion}
+	\label{ch:conclusion}
 	\input{./conclusion/conclusion}
 	
 	\printbibliography
 	
 	\clearpage
 	\appendix
-	\chapter{Business Process Models of the Old Process}
+	
+	\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
+	
+	\chapter{Business Sub Process Models of the Old Process}
 	\label{bpmnOld}
 	\input{./appendix/pbmnOld/bpmnCurrent}
 	
@@ -102,13 +121,21 @@
 	
 	\chapter{Mathematical Code Representation Rule Set Request}
 	\label{mathCode}
-	\input{./appendix/mathCode/mathCode}	
+	\input{./appendix/mathCode/mathCode}
 	
-	\chapter{Visualization Rule Set Request}
-	\label{visuRuleset}
+	\chapter{Definition of Done}
+	\label{definitionOfDone}
+	\input{./appendix/dod/dod}
 	
-	\chapter{Interface Definition}
-	\label{interfaceDef}
-	\input{./appendix/interfaceDefinition/interface}
+	\chapter{Product Backlog}
+	\label{productBacklog}
+	\input{./appendix/productBacklog/pB.tex}
+	
+	\chapter{User Management Server File}
+	\label{ap:userManagement}
+	\input{./appendix/userManagement/server.tex}
+	
+	\chapter{Classdiagrams Mocked Components}
+	\input{./appendix/classdiagrams/diagram}
 	
 \end{document}

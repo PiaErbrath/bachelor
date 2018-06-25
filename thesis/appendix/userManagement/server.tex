@@ -1,0 +1,35 @@
+\begin{lstlisting}
+
+dn: ou=codecentric,dc=codecentric,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: codecentric
+
+dn: ou=groups,ou=codecentric,dc=codecentric,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: groups
+
+dn: ou=people,ou=codecentric,dc=codecentric,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+dn: uid=john.doe,ou=people,ou=codecentric,dc=codecentric,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: John Doe
+sn: Doe
+mail: johnathan.doe@web.de
+uid: john.doe
+userPassword: john.doe
+
+dn: cn=employee,ou=groups,ou=codecentric,dc=codecentric,dc=com
+objectclass: top
+objectclass: groupOfNames
+cn: employee
+member: uid=john.doe,ou=people,ou=codecentric,dc=codecentric,dc=com
+
+\end{lstlisting}

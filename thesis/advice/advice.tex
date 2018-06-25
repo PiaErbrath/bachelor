@@ -1,0 +1,39 @@
+Within this chapter recommendations for the further implementation and improvements of the prototype are given. \newline
+Therefore, it is split in two parts according to the general structure of the system: the core system and its external components.
+
+
+\section{Core System}
+
+For the core system it is important that all requested functionalities will be implemented. This means, the user should have the possibility to:
+
+\begin{enumerate}
+
+\item Select a document for signing
+\item Select a signing group if needed
+\item Select a specific person, which has the required position based on the signing guideline
+\item Send the document for signing
+\item Store a signed document
+
+\end{enumerate}
+
+To implement the first point only changes within the controller and the view component need to be done. The logic is already implemented inside the service component. Within the controller two methods need to be created that coordinates the information exchange and the selection of a document. Inside the view the corresponded buttons and tables functionalities need to be added.
+
+
+For the items two and three only connections and the presentation need to be implemented. No specific implementation needs to be done within the ``external'' components. Therefore, the logic needs to be created within the service for example request for members of a specific position group or asking for the signing groups that are required to sign the document. Within the controller and the view component the communication methods and corresponding view elements need to be added. 
+
+Within the last two items, more changes need to be done at the current state of the prototype. For them the signing system connector needs to be implemented and the \gls{erp} connector enhanced, because currently it does not provide the functionality to return unsigned documents and store signed documents. Furthermore, a convention needs to be developed for the storing documents regarding the naming of the signed documents and the place of storage.
+
+All the items could be found inside the product backlog, which is added in the appendix \ref{productBacklog}. The items that do not need to be implemented are the functionalities of adding new users or changing passwords. The reason for this is the usage of a \gls{ldap} server, where the user data are stored. In most cases the companies and their system administrators have another tool or framework to add users or change passwords.
+
+
+\section{User Management}
+
+Within the user management an additional security should be added. At the moment a deprecated method is used to authenticate users. That should be changed to increase the security level. \newline
+Another important aspect is the implementation of the request for the phone number of a company member. To increase the security level within the signing process, the signing tool may request the phone number of the signer to identify it with an additional code send to the mobile phone. \newline
+Furthermore, it should be possible to make the login independent from a \gls{ldap} server. In case the customer wants to have another user management, it should be possible to change that via a property. 
+
+
+\section{Signing System Connection}
+
+For the \textit{DocuSign} \textit{Java} client \gls{sdk} no concrete documentation exists. The only information available is beneath the following link: \url{https://github.com/docusign/docusign-java-client}. The instructions given on that page page should be followed for the implementation. Due to the fact that the system will not work with templates, which are predefined general documents where only a few information need to added, a different handling needs to be done. \newline
+The class implementing the interface needs to determine where to place the signing fields within the document. Therefore, a research should be done to identify the best solution. It is possible that there exists already solutions for either with another tool, a \textit{Java} library or code.  

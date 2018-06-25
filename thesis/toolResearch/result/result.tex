@@ -2,7 +2,7 @@
 In this section different tools will be described, their test result presented and the general information of them summarized.
 
 \subsection{Wacom sign pro PDF}
-This tool is provided by the company Wacom, which is the customer previously thought for the bachelor project. At the moment there is an \gls{app} available, that signs documents with a \gls{bs} \parencite{wacom2018pdf}. Currently Wacom develops an \gls{sdk} based on the \gls{app}, therefore is no testing possible. The information presented in table \ref{tab:wacom} are from the internet and a product presentation from first March 2018 at the Wacom site in Düsseldorf. \newline
+This tool is provided by the company Wacom, which is the customer previously thought for the bachelor project. At the moment there is an \gls{app} available, that signs documents with a \gls{bs} \parencite{wacom2018pdf}. Currently Wacom develops an \gls{sdk} based on the \gls{app}, therefore is no testing possible. The information presented in table \ref{tool:tab:wacom} are from the internet and a product presentation from first March 2018 at the Wacom site in Düsseldorf. \newline
 \begin{table}[h]
 	
 	\begin{tabular}{|p{4cm}|p{10cm}|} \hline
@@ -29,12 +29,12 @@ This tool is provided by the company Wacom, which is the customer previously tho
 %		Amount of accounts & At the moment also unclear due to the fact that the usage requirements are not published. The \gls{app} currently allows more than 5000 in one environment. \\ \hline
 %	\end{tabular}
 	\caption{Summary Wacom sign pro PDF}
-	\label{tab:wacom}
+	\label{tool:tab:wacom}
 \end{table}
 Due to the fact that the knockout criteria are not fulfilled at the moment, no further research was done.
 
 \subsection{DocuSign}
-This tool is already in usage at \gls{cc}, but not always and with a lot of manual actions and missing things like the company stamp. During the testing a lot of functionalities were figured out. The test protocol is placed in the appendix \ref{sec:docusign}. The table \ref{tab:docusign} below will give a short summary about the test result and other aspects figured out during the research.
+This tool is already in usage at \gls{cc}, but not always and with a lot of manual actions and missing things like the company stamp. During the testing a lot of functionalities were figured out. The test protocol is placed in the appendix \ref{tool:sec:docusign}. The table \ref{tool:tab:docusign} below will give a short summary about the test result and other aspects figured out during the research.
 
 %\begin{table}[h!]
 	
@@ -43,13 +43,13 @@ This tool is already in usage at \gls{cc}, but not always and with a lot of manu
 		Integration &  A \gls{sdk} available within the \grqq Business Flex\grqq packet of the provider or a higher one. Also an integration is possible with Google applications and JIRA, which are both used by \gls{cc}. \parencite{docusign2018integration,docusign2018formats,docusign2018google,docusign2018jira}. \\ \hline
 		Device independent & Online available, also an \gls{app} is accessible for all \gls{os} of smartphones \parencite{docusign2018mobile}. It provides the same functionalities as the web application. \\ \hline
 		Usability &  The fields need to be set manual, it need to be checked if it possible to customize it. Furthermore, it is possible to track activities, assign signer, add the company stamp, transfer the signing responsibility, decline the signing and to sign the document manual and scan it then. \\ \hline
-		Costs & The signing itself costs nothing. The cost per year will be 11.823,00 \euro. Included is the \gls{api} and web application access, support, unlimited users and signers and a document retrieve. This leads to an average cost for one document of 4,93 \euro. The document retriever is included in this calculation, but due to the fact that this functionality is optional the price excluded of it is 3,37 \euro per document and this is taken into account for the later comparison to have a similar base for all tools. Additionally, an on-boarding is offered for 1.250,00 \euro (Appendix \ref{sec:docusignPrice}). Documents, which are unused, will be expired. In the case the amount of documents is expended before the years end, it is possible to order new one. \\ \hline
+		Costs & The signing itself costs nothing. The cost per year will be 11.823,00 \euro. Included is the \gls{api} and web application access, support, unlimited users and signers and a document retrieve. This leads to an average cost for one document of 4,93 \euro. The document retriever is included in this calculation, but due to the fact that this functionality is optional the price excluded of it is 3,37 \euro per document and this is taken into account for the later comparison to have a similar base for all tools. Additionally, an on-boarding is offered for 1.250,00 \euro (Appendix \ref{tool:sec:docusignPrice}). Documents, which are unused, will be expired. In the case the amount of documents is expended before the years end, it is possible to order new one. \\ \hline
 		Accepted file formats & PDF \& Microsoft Word accepted, Open Office Writer is not accepted. Moreover, the maximum accepted size of a file is 25 \gls{mb}. \parencite{docusign2018formats}\\ \hline
 		Operating mode & The tool is as \gls{saas}, \gls{op} or a combination of both available. \parencite{docusign2018op,docusign2018saas} \\ \hline
 		Additional security & Access code, \gls{sms}, phone call or certificate exists for multi-factor authentication. Moreover, a knowledge based authentication is available, where an information from the past of the signer is requested. \parencite{docusign2018security} \\ \hline
 		Legal aspects & DocuSign satisfies the standards of the \gls{eidas}, with the all \gls{es} types mentioned in it, and more security standards \parencite{docusign2018certificates,docusign2018legal,docusign2018es}. Moreover, it fits to the data legacy of most countries worldwide and implemented the regulations of the \gls{gdpr} \parencite{docusign2018global, docusign2018gdpr}. \\ \hline
 	\caption{Summary DocuSign}
-	\label{tab:docusign}
+	\label{tool:tab:docusign}
 	\end{longtable}
 %	\caption{Summary DocuSign}
 %	\label{tab:docusign}
@@ -58,7 +58,7 @@ This tool is already in usage at \gls{cc}, but not always and with a lot of manu
 %\clearpage
 
 \subsection{HelloSign}
-The online tool HelloSign is used at the subsidiary company Istana of \gls{cc}. Therefore, it should also taken into account. Not all functionalities could be tested through the fact that for the business version data were requested, the tester was not allowed to give. The result of the test is documented in appendix \ref{sec:hellosign} and a summary of it together with additional information collected from an online research is given in table \ref{tab:hellosign}.
+The online tool HelloSign is used at the subsidiary company Istana of \gls{cc}. Therefore, it should also taken into account. Not all functionalities could be tested through the fact that for the business version data were requested, the tester was not allowed to give. The result of the test is documented in appendix \ref{tool:sec:hellosign} and a summary of it together with additional information collected from an online research is given in table \ref{tool:tab:hellosign}.
 %\begin{table}[h!]
 	
 	\begin{longtable}{|p{4cm}|p{10cm}|} \hline
@@ -66,13 +66,13 @@ The online tool HelloSign is used at the subsidiary company Istana of \gls{cc}. 
 		Integration & HelloSign has an \gls{api} with different version provided, included there are several functionalities. Moreover, integration exists for Google services like Google Suite and for several other business applications e.g. HubSpot CRM or Slack, which are used at \gls{cc}. Additionally, third party integration is possible with Zapier, a tool for modeling business processes. \parencite{hellosign2018integration,hellosign2018api}\\ \hline
 		Device independent & The tool is online available. Furthermore, exists an \gls{app} for Android and iOS, but it has not the same functionalities as the online platform. It allows only the scanning of documents ans sign them. \parencite{hellosign2018legal}\\ \hline
 		Usability & It is simple to upload a document and sign it, due to the fact that there is intuitive handling. Not all functionalities like branding and company stamp could be tested, because of the non usable test version of higher plans. The fields required for signing need to be set manual and there is not that much choice of fields. In the case the \gls{app} is used, only the creation of a signing process could be done.\\ \hline
-		Costs &  Signing without costs is possible, but the creation and preparation cost. To use the \gls{api} and the web application the \gls{api} Gold Plan and the enterprise web app plan need to be paid. This will costs normally 28.420\$ per year. Included are 80 users, 450 documents sending per month and unlimited support. The cost for one document will be then 9,48\$, which is 7,92 \euro calculated based on the exchange rate from the 14th May 2018.  \ref{sec:hellosignPrice} \\ \hline
+		Costs &  Signing without costs is possible, but the creation and preparation cost. To use the \gls{api} and the web application the \gls{api} Gold Plan and the enterprise web app plan need to be paid. This will costs normally 28.420\$ per year. Included are 80 users, 450 documents sending per month and unlimited support. The cost for one document will be then 9,48\$, which is 7,92 \euro calculated based on the exchange rate from the 14th May 2018.  \ref{tool:sec:hellosignPrice} \\ \hline
 		Accepted file formats & HelloSign accepts several file formats. In the test the formats \gls{PDF}, Microsoft Word and Open Office Writer was accepted. The maximal amount of pages from a document are 500 pages or a file size of 40th \gls{mb} \parencite{hellosign2018documents}.\\ \hline
 		Operating mode & In general the system is available in \gls{saas} mode. \parencite{hellosign2018features} \\ \hline
 		Additional security & To verify the authentication HelloSign has two options: the two-factor authentication and the password protection signature request.\parencite{hellosign2018security} \\ \hline
 		Legal aspects & The tool fulfills the requirements of the \gls{eidas} and \gls{gdpr} from \gls{eu} and can be used in the \gls{usa} \parencite{hellosign2018legal,hellosign2018compliance}. \\ \hline
 	\caption{Summary HelloSign}
-	\label{tab:hellosign}
+	\label{tool:tab:hellosign}
 	\end{longtable}
 %	\caption{Summary HelloSign}
 %	\label{tab:hellosign}
@@ -94,14 +94,14 @@ This tool is provided by Kofax, a partner of \gls{cc}. But due to the fact, that
 		Additional security & \\ \hline
 		Legal aspects & \\ \hline
 	\caption{Summary SignDoc}
-	\label{tab:signdoc}
+	\label{tool:tab:signdoc}
 	\end{longtable}
 %	\caption{Summary SignDoc}
 %	\label{tab:signdoc}
 %\end{table}
 
 \subsection{Adobe Sign}
-This tool is a very popular, which is online available. There is a test version for the business plan, which was tested. The protocol is documented in the appendix \ref{sec:adobesign} and the information gathered from the internet research are summarized in table \ref{tab:adobesign} below. 
+This tool is a very popular, which is online available. There is a test version for the business plan, which was tested. The protocol is documented in the appendix \ref{tool:sec:adobesign} and the information gathered from the internet research are summarized in table \ref{tool:tab:adobesign} below. 
 %\begin{table}[h!]
 	
 	\begin{longtable}{|p{4cm}|p{10cm}|} \hline
@@ -115,14 +115,14 @@ This tool is a very popular, which is online available. There is a test version 
 		Additional security & Multiple methods exist to check the identity of the signer: signing password, knowledge-based authentication, Web-identity authentication, phone authentication and Adobe Sign authentication. \parencite{adobesign2018security} \\ \hline
 		Legal aspects & Adobe Sign fulfills the requirements of the \gls{eidas} and the \gls{gdpr} and can be used also in the \gls{usa}. Available are all \gls{es} types mentioned in the \gls{eidas}. \parencite{adobesign2018legal,adobesign2018gdpr, adobesign2018es}\\ \hline
 	\caption{Summary Adobe Sign}
-	\label{tab:adobesign}
+	\label{tool:tab:adobesign}
 	\end{longtable}
 %	\caption{Summary Adobe Sign}
 %	\label{tab:adobesign}
 %\end{table}
 
 \subsection{SignNow}
-SignNow is one of lower-priced \gls{es} tool available. With the test version of the functionalities and process of it are tested. The test is minuted in the appendix \ref{sec:signnow} and the information collected from the internet research are pooled in the table \ref{tab:signnow}.
+SignNow is one of lower-priced \gls{es} tool available. With the test version of the functionalities and process of it are tested. The test is minuted in the appendix \ref{tool:sec:signnow} and the information collected from the internet research are pooled in the table \ref{tool:tab:signnow}.
 %\begin{table}[h!]
 	\begin{longtable}{|p{4cm}|p{10cm}|} \hline
 		\rowcolor{Gray}Criterion & Fulfillment \\ \hline
@@ -130,72 +130,72 @@ SignNow is one of lower-priced \gls{es} tool available. With the test version of
 		Device independent & SignNow is an online application, therefore available on every computer with internet connection. Moreover, exist an \gls{app} for the \gls{os} iOS and Android.\\ \hline
 		Usability & The tool fulfills most of the requested functionalities excepted the company stamp, instead some other features are available. But inside different browsers another guidance is given. Moreover, the fields need to be set manually.\\ \hline
 		Costs & Based on the information received from the sales of SignNow, it will cost around 2.000\euro /year for 2400 documents/year. The costs for one document will be around 0,83 \euro. But there is no information available if there are the usage of the web application is included. \\ \hline
-		Accepted file formats & On the internet there is no information available regarding the acceptance of document types. The document types tested based on the scenario described in section \ref{sec:criteria} are accepted.\\ \hline
+		Accepted file formats & On the internet there is no information available regarding the acceptance of document types. The document types tested based on the scenario described in section \ref{tool:sec:criteria} are accepted.\\ \hline
 		Operating mode & SignNow is as \gls{op} available, but in general as \gls{saas}. \parencite{signnow2018op} \\ \hline
 		Additional security & Three types for the authentication are provided: document password, dual factor authentication and phone call authentication. But there might be the problem that some of them are not available outside the \gls{usa}. \parencite{signnow2018security} \\ \hline
 		Legal aspects & SignNow fulfills the requirements of \gls{eidas} and the \gls{gdpr}. That leads to the fact that they are allowed to be used in the \gls{eu}. Regarding the circumstance that the tool was developed in the \gls{usa} it is also usable there \parencite{signnow2018legal}. There is no information available regrading the used \gls{es} types. Therefore, it has to be assumed that it offers only the \gls{ses} signature. \\ \hline
 	\caption{Summary SignNow}
-	\label{tab:signnow}
+	\label{tool:tab:signnow}
 	\end{longtable}
 %	\caption{Summary SignNow}
 %	\label{tab:signnow}
 %\end{table}
 
 \subsection{eSign Live}
-Another tool that is taken into account is eSign Live, which is owned by the company VASCO and is placed in Canada. The test result is shown in appendix \ref{sec:esign} and the result from the test impression and internet research is summarized in table \ref{tab:esign}.
+Another tool that is taken into account is eSign Live, which is owned by the company VASCO and is placed in Canada. The test result is shown in appendix \ref{tool:sec:esign} and the result from the test impression and internet research is summarized in table \ref{tool:tab:esign}.
 %\begin{table}[h!]
 	\begin{longtable}{|p{4cm}|p{10cm}|} \hline
 		\rowcolor{Gray}Criterion & Fulfillment \\ \hline
 		Integration & In the enterprise plan of the tool an \gls{api} os provided. \parencite{esign2018info} \\ \hline
 		Device independent & eSign live is a system, that has a web application and has \glspl{app} for iOS and Android, which have the same functionalities as the web application. \parencite{esign2018info} \\ \hline
 		Usability & The tool is simple to use and has the most functionalities requires by \gls{cc}. Only the declining functionality and the company stamp option are not available. Moreover, are other functionalities available like the in-person signing. Both, the \gls{app} and the web application are intuitive usable.  \\ \hline
-		Costs & The usage of the \gls{api} and \gls{sdk} with 2400 documents per year will cost 5.640 \euro/year. This is the enterprise plan. In the case the web application is also used it will cost 13.680 \euro/year. To compare the tool with other tool it need to be sum up, which leads to a sum of 19.320 \euro/year. The costs for one document are 7,63 \euro. The information are from the support of the tool. \ref{sec:esignlivePrice} \\ \hline
+		Costs & The usage of the \gls{api} and \gls{sdk} with 2400 documents per year will cost 5.640 \euro/year. This is the enterprise plan. In the case the web application is also used it will cost 13.680 \euro/year. To compare the tool with other tool it need to be sum up, which leads to a sum of 19.320 \euro/year. The costs for one document are 7,63 \euro. The information are from the support of the tool. \ref{tool:sec:esignlivePrice} \\ \hline
 		Accepted file formats & Tested and accepted are \gls{PDF}, Microsoft Word, Open Office and JPG formats. There exists no information online.\\ \hline
 		Operating mode & The tool is completely available as \gls{saas}.\\ \hline
 		Additional security & The tool provides three different authentication methods: answering on questions, access code authentication via \gls{sms} or knowledge-based authentication (point of time 2015 only American ID) \parencite{esign2018security} \\ \hline
 		Legal aspects & The requirements of the \gls{eidas} are fulfilled, for all types of \gls{es} described in the regulation. Moreover, Vasco supposed that the tool will be compliant to the \gls{gdpr} until the 25th May 2018. The tool can be used in the most countries of the world. \parencite{esign2018eidas,esign2018legal} \\ \hline
 	\caption{Summary eSign Live}
-	\label{tab:esign}
+	\label{tool:tab:esign}
 	\end{longtable}
 %	\caption{Summary eSign Live}
 %	\label{tab:esign}
 %\end{table}
 
 \subsection{PandaDoc}
-PandaDoc is tool, which was also a tool, which was mentioned by \gls{cc}. It has more functionalities than only signing of documents. The test protocol is placed in appendix \ref{sec:pandadoc} and the result is summarized along with other information from the internet in table \ref{tab:pandadoc}. 
+PandaDoc is tool, which was also a tool, which was mentioned by \gls{cc}. It has more functionalities than only signing of documents. The test protocol is placed in appendix \ref{tool:sec:pandadoc} and the result is summarized along with other information from the internet in table \ref{tool:tab:pandadoc}. 
 %\begin{table}[h!]
 	\begin{longtable}{|p{4cm}|p{10cm}|} \hline
 		\rowcolor{Gray}Criterion & Fulfillment \\ \hline
 		Integration & PandaDoc offers already integration for HubSpot and Google Drive, both used or available at \gls{cc} \parencite{pandadoc2018integration}. Additionally, an \gls{api} exist, which can be used to create individual integration \parencite{pandadoc2018api}. \\ \hline
 		Device independent & The tool is online available and has \glspl{app} for Android and iOS, but the \gls{app} for Android did not start in the test. \\ \hline
 		Usability & The basic functionalities are available, but not all like the company stamp. In general some drag-and-drop actions need to be taken to prepare the document for the signing. Additionally, some more functionalities exists like the document creation.\\ \hline
-		Costs & The cost will be around 74.400,00 \$ per year for 2400 documents and 80 users. Included is an access to the \gls{api} and the web application, document creation, custom branding and other features. Once 1.500,00\$ could be paid to have an onboarding. The costs for one document are 19\$, which is translated 15,88 \euro based on the exchange rate from the 14th May 2018. \ref{sec:pandaPrice} \\ \hline
+		Costs & The cost will be around 74.400,00 \$ per year for 2400 documents and 80 users. Included is an access to the \gls{api} and the web application, document creation, custom branding and other features. Once 1.500,00\$ could be paid to have an onboarding. The costs for one document are 19\$, which is translated 15,88 \euro based on the exchange rate from the 14th May 2018. \ref{tool:sec:pandaPrice} \\ \hline
 		Accepted file formats & In the test it was figured out that \gls{PDF} and Microsoft Word is accepted along with images formats. Open Office is not accepted. \\ \hline
 		Operating mode & The provider offers the tool as \gls{saas} application. \parencite{pandadoc2018saas} \\ \hline
 		Additional security & Not presented and nothing for testing available. \\ \hline
 		Legal aspects & PandaDoc will fulfill the requirements of the \gls{gdpr} and the fulfills already the standards from \gls{usa}. It is explained, that there are three different types of \gls{es} is provided: insecure \gls{es}, secure \gls{es} and digital \gls{es}.  \parencite{pandadoc2018gdpr,pandadoc2018legal} \\ \hline
 	\caption{Summary PandaDoc}
-	\label{tab:pandadoc}
+	\label{tool:tab:pandadoc}
 	\end{longtable}
 %	\caption{Summary PandaDoc}
 %	\label{tab:pandadoc}
 %\end{table}
 
 \subsection{eSignAnyWhere}
-To the provider of the tool eSignAnyWhere Namirial one employee of \gls{cc} has connections. This is the reason why it is taken into account. It is also the only tool in the selection, which was developed by an \gls{eu} company \parencite{signAny2018contact}. The information collected are summarized in table \ref{tab:esignany} and test protocol is in the appendix \ref{sec:signAny}. \newpage
+To the provider of the tool eSignAnyWhere Namirial one employee of \gls{cc} has connections. This is the reason why it is taken into account. It is also the only tool in the selection, which was developed by an \gls{eu} company \parencite{signAny2018contact}. The information collected are summarized in table \ref{tool:tab:esignany} and test protocol is in the appendix \ref{tool:sec:signAny}. \newpage
 %\begin{table}[h!]
 	\begin{longtable}{|p{4cm}|p{10cm}|} \hline
 		\rowcolor{Gray}Criterion & Fulfillment \\ \hline
 		Integration & There is an \gls{api} available with extended tutorials. Moreover, exists a Plugin for Microsoft Word. \parencite{signAny2018api, signAny2018dev,signAny2018guide} \\ \hline
 		Device independent & The system is device independent and offers \glspl{app} for iOS and Android. It is not clear, which one to use. \parencite{signAny2018info} \\ \hline
 		Usability & The tool is intuitive usable. On the web application a few manual steps need to be done, but there is the option to do it automatically with placeholders in a document, so that the tool knows where to place the different fields. But a company stamp is not available. \parencite{signAny2018guide} \\ \hline
-		Costs & Based on the information received from the contact of the provider it will cost \gls{cc} 3.000\euro for 2500 documents per year with an infinite amount of users. The unused documents will be expired after a year. In the case that the volume is already consumed before the year ends, \gls{cc} could order a new volume. The price for one document is 1,25 \euro. (Appendix \ref{sec:esignanyPrice}) \\ \hline
+		Costs & Based on the information received from the contact of the provider it will cost \gls{cc} 3.000\euro for 2500 documents per year with an infinite amount of users. The unused documents will be expired after a year. In the case that the volume is already consumed before the year ends, \gls{cc} could order a new volume. The price for one document is 1,25 \euro. (Appendix \ref{tool:sec:esignanyPrice}) \\ \hline
 		Accepted file formats & It is tested that the tool accepts \gls{PDF}, Microsoft Word ans some images files, but no Open Office files for a document. But for attachments more file formats are accepted, also Open Office files. \\ \hline
 		Operating mode &  The tool is available as \gls{saas} or as \gls{op} \parencite{signAny2018business}. \\ \hline
 		Additional security & Multi-factor authentication is available in the tool. In general the authentication is a pin given by the initiator of the process or by the tool via a \gls{sms} or with Windows live. \parencite{signAny2018sign} \\ \hline
 		Legal aspects & The tool offers different kinds of \gls{es} and is based on that allowed to be used in the \gls{eu} and worldwide. Moreover, is the tool listed in the \gls{eu} Trust List, where all trusted services regarding the \gls{eidas} are listed. \parencite{signAny2018sign,signAny2018trust} \\ \hline
 	\caption{Summary eSignAnyWhere}
-	\label{tab:esignany}
+	\label{tool:tab:esignany}
 	\end{longtable}
 %	\caption{Summary eSignAnyWhere}
 %	\label{tab:esignany}

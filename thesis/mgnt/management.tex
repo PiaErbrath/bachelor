@@ -1,20 +1,20 @@
 For the managing of the bachelor thesis project different aspects need to be taken into account, like how to do the project in which time and how to ensure a good quality of products. These things are explained in this chapter.
 
 \section{Approach}
-The project in general is done in a waterfall model, based on the phases explained in section \ref{sec:phases}. Its wokflow is the following: Only if the current phase is finished, the next phase can be started. In the phases itself another working model could be used. For this project it is only done in the implementation and testing phase. There a customized version of the agile approach \textit{Scrumban} is used.
+The project in general is done in a waterfall model, based on the phases explained in section \ref{sec:phases}. Its wokflow is the following: Only if the current phase is finished, the next phase can be started. In the phases itself another working model can be used. For this project it is only done in the implementation and testing phase. There a customized version of the agile approach \textit{Scrum} is used. 
 
--------ToDo---------------
+The  customized \textit{Scrum} works in the following way: At the beginning of the implementation so called \textit{User Stories} were defined, that are requirements described in a has-to-scenario like ``The user wants to login to the system''. They are defined by the customer and the \textit{Product Owner}, a role within the methodology that is responsible for the final product and the customer communication. This role is played by the site manager Christian Böhmel. All \textit{User Stories} are collected in the \textit{Product Backlog}, which is within the project an \textit{Excel} sheet. It is added in the appendix \ref{productBacklog}. During the implementation more \textit{User Stories} could be created, that are easily added to the \textit{Product Backlog}. \newline
+The implementation is done in time frames called \textit{Sprint}. In the normal case they have a time limit, but inside the project the decision was made to end a \textit{Sprint} when all work of it is done. For each new \textit{Sprint} a \textit{Sprint Planning} is done, in which all involved roles \textit{Product Owner}, Developer and \textit{Scrum Master}, which has the responsibility to coordinate and mange the team but is inside this project not used, plan the next iteration of work. Within this meeting certain \textit{User Stories} are collected from the \textit{Product Backlog} to be processed within the next \textit{Sprint}. These \textit{User Stories} are collected in the \textit{Sprint Backlog}, which stores all \textit{User Stories} of this \textit{Sprint}. Within the project they are placed in the same document as the \textit{Product Backlog}. For each \textit{User Story} the time is calculated in which it should be finished. In the case a \textit{User Story} gets the status ``Done'' some criteria need to be fulfilled, that are defined in the \textit{Definition of Done}. The \textit{Definition of Done} for this project is placed in the appendix \ref{definitionOfDone}. \newline
+Within a \textit{Sprint} the typical \textit{Daily Scrum} meeting is ignored, due to the fact the the developer team has a size of one member. When the \textit{Sprint} is finished, a \textit{Sprint Review} meeting is held to proof the acceptance of the implemented \textit{User Stories} by the \textit{Product Owner} and customer. Afterwards, the next \textit{Sprint} is planed. \parencite{scrum2018} 
 
-The usage of an agile way helps to develop a product that fulfill all requirements specified and is maintainable. This happen as a result of the continuous implementation of additional functionalities in existing basic functionalities. 
-
-For the agile way iterations, also called sprints, are planned with one use case, which is selected together with the leader of the department \gls{ds} and one member of the department sales. 
+The usage of \textit{Scrum} helps to develop a product that fulfills all requirements specified by the customer and which is maintainable for further improvements. This happens as a result of the continuous implementation of additional functionalities in existing basic functionalities. Furthermore, an always working product is delivered at the end of each \textit{Sprint}.
 
 \section{Time Planning}
 The project implementation will be done in an agile way, that means for the implementation of the worflow user stories will be created, and they need to be fulfilled. The preparation that needs to be done before are made inside a waterfall model. A general time planning can be seen in table \ref{tab:timeplanning}. 
-\begin{table} [h]
+\begin{table} [!h]
 	\centering
 	\begin{tabular}{|c|c|l|c|} \hline
-		\rowcolor{Gray}Phase & Week & Activity & CW \\ \hline
+		\rowcolor{Gray}Phase & Week & Activity & Calender Week \\ \hline
 		\multirow{2}{*}{1} & 1-4 & Project planning, Topic introduction & 5-9 \\
 		& 4 & Research \gls{es} & 9 \\	\hline	
 		Milestone I & 06/03/2018 & Project Plan & 10\\ \hline
@@ -27,34 +27,35 @@ The project implementation will be done in an agile way, that means for the impl
 		\multirow{2}{*}{4} & 12-17 & Implementing system & 17-21 \\
 		& 18 & Testing system & 22 \\ \hline
 		5 & 19 & Final preparation of report \& presentation & 23 \\ \hline
-		Milestone IV & 12/06/2018 & Final Report & 24\\ \hline
-		Milestone V & 04/07/2018 & Final presentation & ? \\ \hline
+		Milestone IV & 26/06/2018 & Final Report & 26\\ \hline
+		Milestone V & 04/07/2018 & Final presentation & 27 \\ \hline
 	\end{tabular}
 	\caption{Time planning of project}
 	\label{tab:timeplanning}
 \end{table}
 
+
 \section{Quality Assurance}
 The project consist out of three major deliverable categories that have different quality approaches. They are listed below:
 \begin{enumerate}
 	\item Documents: \newline
-	To create qualitatively high documents two techniques are used. On the one hand the writing is done with a tool that checks the orthographic and the grammar and on the other one is the document reviewed by other persons to check the logic and understandability. 
+	To create documents of high quality two techniques are used. On the one hand the writing is done with a tool that checks the orthography and the grammar and on the other hand is the document reviewed by other persons to check the logic and understandability. 
 	\item Diagrams: \newline
-	In the analysis and the design phase diagrams need to be created. First of all the used diagram types have defined standards, these standards has to be fulfilled. Therefore, tools will be used that can handle the checking. Additional the logic will be checked by persons that currently work (or will work) in the processes visualized in the diagram. 
+	In the analysis and the design phase diagrams need to be created. First of all the used diagram types have defined standards, these standards have to be fulfilled. Therefore, tools will be used that can handle the checking. Additionally the logic will be checked by persons that currently work (or will work) in the processes visualized in the diagram. 
 	\item Implementation: \newline
-	For the implementation different use cases will be created, that need to be implemented. The checking will be that they can be executed without errors. Furthermore, if code is created, it will be done based on the defined standard of the used programming language and test driven. Moreover a definition of done will be created, that ensures the quality of the developed code.
+	For the implementation different use cases will be created, that need to be implemented. The checking will be that they can be executed without errors. Furthermore, if code is created, it will be done based on the defined standard of the used programming language and test driven. Moreover a definition of done will be created (see appendix \ref{definitionOfDone}), that ensures the quality of the developed code.
 \end{enumerate}
-The created results will be regular presented and discussed with involved persons. That leads to the possibility to avoid big problems, cause of their early detection. The quality management is agreed with the company. 
+The created results will be regularly presented and discussed with involved persons. This allows to possibly avoid bigger problems, due to early detection during the presentations and discussions. The quality management is agreed with the company. 
 
 \section{Deliverables}
 At the end of the internship the following things need to be delivered:
 \begin{itemize}
 	\item Project Plan: Inside this document the first planning of the bachelor project is written down. The reason of the existence of this document, is to get an overview of the bachelor thesis project for all involved parties. The parties are listed at the information page.
 	\item Visualization of the current process: To get an overview about the current process of the sales department a visualization of their process is done with \gls{bpmn} diagrams. Based on them an analysis is done (see chapter \ref{ch:analysis}). The diagrams are placed in the appendix \ref{bpmnOld}.
-	\item Research documents: During the bachelor thesis two researches need to be done. The first one is about \gls{es}, which is placed in the appendix \ref{res:es}. It was done to get knowledge about \gls{es} and to clarify which \gls{es} could be used at \gls{cc}. The other research is about tools, which implement the \gls{es} of documents already and can be used for the system to be created during the bachelor thesis. The research document is in the appendix \ref{res:tool}.
-	\item Design visualization of the system: To get an understanding of the created system and show the skills of the student, the design of the system should be visualized by several diagrams with \gls{uml} standards, like a class diagram or activity diagrams. The diagrams should present the structure of the implementation and the processes of the systems.
+	\item Research documents: During the bachelor thesis two researches need to be done. The first one is about \gls{es}, which is placed in the appendix \ref{res:es}. It was done to get knowledge about \gls{es} and to clarify which \gls{es} could be used at \gls{cc}. The other research is about tools, which already implement the \gls{es} of documents and can be used for the system to be created during the bachelor thesis. The research document is in the appendix \ref{res:tool}.
+	\item Design visualization of the system: To get an understanding of the created system, its design should be visualized by several diagrams with \gls{uml} standards, like a class diagram or activity diagrams. The diagrams should present the structure of the implementation and the processes of the systems.
 	\item Documentation of the system: Another deliverable is the documentation of the system. This includes user manual, administrator guide and developer documentation (source code, architecture description, etc.). They should give help to work with the later system in the case the author is not available anymore after finishing the project.
-	\item Report of thesis: To give an overview about all things done and decisions taken during the bachelor thesis project a document is to be created, which will be read through the examiners of the bachelor thesis. Moreover, the document will be later public available.   
+	\item Report of thesis: To give an overview about all things done and decisions taken during the bachelor thesis project a document is to be created, which will be read through the examiners of the bachelor thesis.
 \end{itemize}
 
 \section{Risk Management}
@@ -62,14 +63,14 @@ Inside this section risks will be presented in the table \ref{fig:risks}.
 \begin{center}
 	\begin{landscape}
 		\begin{table}[h]
-			\begin{tabular}{|p{0,5cm}|p{2cm}|p{4cm}|p{4cm}|p{4cm}|p{1,5cm}|p{1,5cm}|p{1,5cm}|} \hline
+			\begin{tabular}{|p{0,5cm}|p{2.5cm}|p{5cm}|p{4cm}|p{4cm}|p{1,5cm}|p{1,5cm}|p{1,5cm}|} \hline
 				\rowcolor{Gray} \# & Risk & Description & Trigger & Precaution & Probability & Impact & Status \\ \hline
 				1 & Time Issue & Long absence from project leads to time problems to finish tasks. & Illness, accident, holidays, to less project boundaries, ... & Estimate more time than expected (time buffer), clear scope definition & 7 & 6 & Occurred \\ \hline
-				2 & Legals & Legals influence the requirement of a project and need to be fulfilled otherwise it could results in punishments & New laws from governance/ \gls{eu} & Collaboration a lawyer / person with knowledge about laws, Make research about laws regarding used technology & 2 & 7 & Open \\ \hline
+				2 & Legals & Legals influence the requirement of a project and need to be fulfilled otherwise it could results in punishments & New laws from governance/ \gls{eu} & Collaboration a lawyer / person with knowledge about laws, Make research about laws regarding used technology & 2 & 7 & Occurred and Closed \\ \hline
 				3 & New technology / programming language / \gls{api} / \gls{SDK} / framework & The usage of new technology results	in unknown problems that could not be solved with that technology due to the fact that requirements could not be fulfilled & Not enough knowledge about 	the used technology & Good research about technology, usage of tools knowledge already exists in company, estimate more time & 3 & 3 & Occurred \\ \hline
-				4 & Communi- cation & Cause of the influence of many parties on the project, communication problems could occur, like meetings invitation, incorrect requirements, ... & Missing or incomplete communication & Research about all involved parties, keep them informed and make regular meetings & 3 & 3 & Open \\ \hline
-				5 & \gls{erp} & Currently the Backoffice/Finance/\gls{hr} want to switch to a new \gls{erp},
-				but at the moment it is not clear which	one will be used. Some steps of	the new workflow depend on the \gls{erp}, so that the workflow could not be implemented at the end	of the project. & Late decision, no possible to fit workflow to the \gls{erp} & Communication, get information about the current state & 5 & 5 & Occurred \\ \hline
+				4 & Communi- cation & Cause of the influence of many parties on the project, communication problems could occur, like meetings invitation, incorrect requirements, ... & Missing or incomplete communication & Research about all involved parties, keep them informed and make regular meetings & 3 & 3 & Occurred \\ \hline
+				5 & \Gls{erp} & Currently the Backoffice/Finance/\gls{hr} want to switch to a new \gls{erp},
+				but at the moment it is not clear which	one will be used. Some steps of	the new workflow depend on the \gls{erp}, so that the workflow could not be implemented at the end	of the project. & Late decision, no possible to fit workflow to the \gls{erp} & Communication, get information about the current state & 5 & 5 & Occurred and Closed \\ \hline
 			\end{tabular}
 			\caption{Risk Register}
 			\label{fig:risks}
