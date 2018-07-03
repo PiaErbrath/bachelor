@@ -1,6 +1,6 @@
 \documentclass[utf8, xcolor, usenames,dvipsnames, aspectratio=169, notes, ]{beamer}
 \usepackage[german] {babel}
-\usepackage[T1]      {fontenc}
+\usepackage[T1]{fontenc}
 
 \usepackage{amsmath, amsfonts, graphicx}
 \usepackage{bibunits, tikz}
@@ -45,20 +45,20 @@
 \begin{frame}{Aufgabe}
 	\begin{itemize}
 		\item Kunde: codecentric AG
-		\item Einführung der elektronischen Unterschrift als Standard
-		\item Automatisierung \& Digitalisierung des Unterschreibungprozesses \newline mit Standardsystemen 
+		\item Einführung der elektronischen Unterschrift als unternehmensweiten Standard
+		\item Automatisierung \& Digitalisierung des Unterschreibungsprozesses \newline mit Standardsystemen 
 	\end{itemize}
 \end{frame}
 %\note{ha}
 
-\section{Analyse der Initialen Situation}
-\begin{frame}{Business Prozess}
+\section{Analyse der initialen Situation}
+\begin{frame}{Businessprozess}
 	\begin{figure}
 		\centering
 		\colorbox{white}{\includegraphics[width=0.93\textwidth, height=0.78\textheight]{./images/0_main}}
 	\end{figure}
 \end{frame}
-\note{Gut durchführen!!!}
+%\note{Gut durchführen!!!}
 
 \begin{frame}{Probleme}
 	\begin{itemize}
@@ -73,7 +73,7 @@
 	\end{itemize}
 \end{frame}
 
-\section{Bedingungen an den Neuen Prozess \& das Systems}
+\section{Bedingungen an den neuen Prozess \& das System}
 \begin{frame}{Ziele}
 	\begin{itemize}
 		\item Erarbeitet und Abgeklärt mit Beteiligten
@@ -95,7 +95,7 @@
 	\end{itemize}
 \end{frame}
 
-\section{Recherche zum Tool für die Elektronische Unterschrift}
+\section{Recherche zum Tool für die elektronische Unterschrift}
 
 \begin{frame}{Kriterien}
 	\begin{itemize}
@@ -142,20 +142,20 @@
 \end{frame}
 
 \begin{frame}{Anfrage Unterschriften Gruppen}
-	\begin{figure}[t]
+	\begin{figure}
 		\centering
-		\includegraphics[width=0.7\textwidth, height=0.7\textheight]{./images/ruleSet}
+		\includegraphics[width=0.8\textwidth, height=0.78\textheight]{./images/ruleSet}
 	\end{figure}
 \end{frame}
 
 \begin{frame}{Problemlösung Detail}
 	\begin{table}
 		\begin{tabular}{|p{6cm}|p{6cm}|}\hline
-			\textbf{Problem} & \textbf{Lösung} \\ \hline
+			\rowcolor{codeBlue}\textbf{Problem} & \textbf{Lösung} \\ \hline
 			\multirow{2}{*}{Zu hoher manueller Aufwand} & Elektronische Unterschreiben \\ \cline{2-2}
 								& Automatisiertes Archivieren unterschriebener Dokumente \\ \hline
 			\multirow{2}{*}{Falsch unterzeichnete Dokumente}  & Überprüfung ob Person unterschreiben darf \\ \cline{2-2}
-								& Vorgabe der Unternehmenspositiongruppen, die mit zu unterschreiben haben \\ \hline
+								& Vorgabe der Unternehmenspositionsgruppen, die mit zu unterschreiben haben \\ \hline
 		\end{tabular}
 	\end{table}
 \end{frame}
@@ -171,14 +171,13 @@
 \end{frame}
 
 
-
 \section{Fazit}
 
 \begin{frame}{Zusammenfassung}
 	\begin{itemize}
-		\item Aktueller Prozess hat Probleme
+		\item Im aktuellen Prozess sind Probleme vorhanden
 		\item Verbesserungsvorschlag: Automatisierung \& Nutzung elektronischer Unterschrift
-		\item Änderung Rahmenbedingungen \& kurzer Zeitrahmen $\Rrightarrow$ Keine Implementierung möglich
+		\item Änderung der Rahmenbedingungen \& kurzer Zeitrahmen \newline $\Rrightarrow$ Keine Implementierung möglich
 		\item Designvorschlag zur Umsetzung der Verbesserungsvorschläge
 		\item Entwicklung der Datenstrukturen für den Prototypen
 	\end{itemize}
@@ -186,14 +185,14 @@
 
 \begin{frame}{Empfehlungen}
 	\begin{itemize}
-		\item Für das ERP gibt es Plugin:
+		\item Plugin für das ERP System vorhanden:
 		\begin{itemize}
 			\item Überprüfen ob das Tool die Bedingungen erfüllt
 			\item Nutzung des Tools (Kosten-Nutzen Faktor besser)
 		\end{itemize}
-		\item Für das ERP gibt es kein Plugin:
+		\item Kein Plugin für das ERP System vorhanden:
 		\begin{itemize}
-			\item Recherche nochmal kontrollieren
+			\item Recherche erneut kontrollieren
 			\item System implementieren mit den empfohlenen Tools
 			\item Überprüfung welche Daten benötigt werden (DSGVO konform)
 		\end{itemize}
